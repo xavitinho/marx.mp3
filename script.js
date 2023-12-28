@@ -25,7 +25,7 @@ if (
     speechSynthesis.onvoiceschanged = populateVoiceList;
 }
 
-fetch('../store.json').then(response => {
+fetch('/store.json').then(response => {
     response.json().then(store => {
         let menu = document.getElementById('menu')
         Object.keys(store).forEach(autor => {
