@@ -1,0 +1,29 @@
+.invisible {
+    display: none;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+body {
+    display: flex;
+}
+
+@media(max-width: 699px) {
+    .coluna {
+        width: 100%;
+    }
+}
+
+@media(min-width: 700px) {
+    .coluna {
+        width: 50%;
+    }
+}
+
+.coluna {
+    border: solid 1px #000;
+    width: 50%;
+    padding: 20px;
+}
