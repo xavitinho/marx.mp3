@@ -27,3 +27,12 @@ body {
     width: 50%;
     padding: 20px;
 }
+
+#right {
+    height: 80vh;
+}
+
+#leitor {
+    height: 80%;
+    overflow-y: scroll;
+}

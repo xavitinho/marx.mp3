@@ -12,10 +12,15 @@
   <div class="coluna" id="opcoes">
     <div><select id="voiceSelect"></select></div>
     <div>pesquise por um autor ou texto aqui: <input class="search" id="search" type="text"></div>
-    <div>clique em um autor para ver seus textos:<ul id="menu" class="visible"></ul></div>
+    <div>clique em um autor para ver seus textos:<ul id="menu" class="visible"></ul>
+    </div>
   </div>
-  <div class="coluna" id="leitor">
-
+  <div class="coluna" id="right">
+    <button onclick="play()" id="buttonplay" data-autor="none" data-titulo="none">falar</button>
+    <div id="progresso"></div>
+    <p id="erroplay"></p>
+    <div id="leitor">
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
