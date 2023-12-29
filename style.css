@@ -89,6 +89,7 @@ select {
 #leitor {
     padding: 10px;
     text-align: justify;
+    overflow-x: hidden;
 }
 
 .disabled {
