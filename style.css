@@ -13,28 +13,37 @@ body {
 @media(max-width: 699px) {
     .coluna {
         width: 100%;
+        height: 50%;
     }
 }
 
 @media(min-width: 700px) {
     .coluna {
         width: 50%;
+        height: 90vh;
     }
 }
 
 .coluna {
     border: solid 1px #000;
-    width: 50%;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-#right {
-    height: 80vh;
+
+#opcoes {
+    width: 50%;
+}
+
+#leitor, #menumenu {
+    overflow-y: scroll;
+    border: solid 1px #aaa;
 }
 
 #leitor {
-    height: 80%;
-    overflow-y: scroll;
+    padding: 10px;
+    text-align: justify;
 }
 
 .disabled {
@@ -66,6 +75,7 @@ button:hover:not(.disabled) {
     border: solid 1px #ccc;
     z-index: 1;
     width: 100%;
+    box-shadow: 0 10px 10px #aaa;
 }
 
 #voiceSelect {
@@ -83,3 +93,4 @@ favoritos {
     height: 100px;
     padding: 20px
 }
+

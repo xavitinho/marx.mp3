@@ -67,10 +67,12 @@ function showtxts(autor) {
     e.className = e.className == 'invisible' ? 'visible' : 'invisible'
 }
 
-let txttoread = {}
+
+let txttoread = JSON.parse(localStorage.getItem('txts'))
+if(!txttoread) txttoread = {}
+atualizafavoritos()
 
 async function requestserver(autor, titulo, url) {
-
     let button = document.getElementById('buttonplay')
     let leitor = document.getElementById('leitor')
     let erro = document.getElementById('errotxt')
@@ -128,7 +130,7 @@ async function requestserver(autor, titulo, url) {
     } else {
         txttoread[autor][titulo] = undefined
     }
-    console.log(txttoread)
+    atualizafavoritos()
 }
 
 function play() {
@@ -163,20 +165,21 @@ function pause() {
     }
 }
 
-function limpar() {
+function limpar(autor, titulo) {
     let button = document.getElementById('buttonclear')
-    if (button.className != 'disabled') {
-        window.speechSynthesis.cancel()
+    if(autor && titulo) {
+        txttoread[autor][titulo] = undefined
+    } else if(button.className != 'disabled') {
         const { autor, titulo } = button.dataset
         txttoread[autor][titulo].progresso = 0
-        document.getElementById('leitor').innerHTML = ''
+        window.speechSynthesis.cancel()
         document.getElementById('progresso').innerText = ''
         document.getElementById('buttonplay').dataset.titulo = 'none'
         document.getElementById('buttonclear').className = 'disabled'
         document.getElementById('buttonpause').className = 'disabled'
         document.getElementById('erroplay').innerText = ''
-        atualizafavoritos()
     }
+    atualizafavoritos()
 }
 
 function speak(autor, titulo) {
@@ -212,6 +215,7 @@ function showfavoritos() {
 }
 
 function atualizafavoritos() {
+    localStorage.setItem('txts', JSON.stringify(txttoread))
     let menu = document.getElementById('menufavoritos')
     menu.innerHTML = ''
     Object.keys(txttoread).forEach(autor => {
@@ -221,9 +225,11 @@ function atualizafavoritos() {
         Object.keys(txttoread[autor]).forEach(texto => {
             if (txttoread[autor][texto] && txttoread[autor][texto].progresso > 0) {
                 let inferno = texto.includes('"') ? "'" : '"'
-                html += `<li><a onclick=${inferno}requestserver(\`${autor}\`, \`${texto}\`)${inferno}>
+                html += `<li><a style="font-weight: bold;" onclick=${inferno}requestserver(\`${autor}\`, \`${texto}\`)${inferno}>
                         ${texto} (${txttoread[autor][texto].progresso}/${txttoread[autor][texto].texto.length} )
-                        </a></li>`
+                        </a><br>
+                        <a style="color: #f00; font-size: .8em; font-weight: bold;" 
+                        onclick=${inferno}limpar(\`${autor}\`, \`${texto}\`)${inferno}>× remover da memória </a></li>`
                 visible = true
             }
         })
