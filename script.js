@@ -103,16 +103,20 @@ async function requestserver(autor, titulo, url) {
                         let cont = 0
                         let total = paragrafos.length
                         for (let par of paragrafos) {
-                            if (par.className == 'toc' && par.children[0].getAttribute("href")) {
-                                let capurl = url.replace('index.htm', par.children[0].getAttribute("href"))
-                                if (!capurl.includes('.pdf')) {
-                                    let response1 = await fetch('https://servermarxmp3.xaax.repl.co/?url=' + capurl).catch(e => {
-                                        erro.innerText = 'houve um erro, tente novamente'
-                                        return;
-                                    })
-                                    let txt1 = await response1.json()
-                                    if (!txt1.erro) txt += txt1
-                                    else element.innerText = txt1.erro
+                            if (par.className.includes('toc')) {
+                                if (par.children.length > 0) {
+                                    if (par.children[0].getAttribute("href")) {
+                                        let capurl = url.replace('index.htm', par.children[0].getAttribute("href"))
+                                        if (!capurl.includes('.pdf')) {
+                                            let response1 = await fetch('https://servermarxmp3.xaax.repl.co/?url=' + capurl).catch(e => {
+                                                erro.innerText = 'houve um erro, tente novamente'
+                                                return;
+                                            })
+                                            let txt1 = await response1.json()
+                                            if (!txt1.erro) txt += txt1
+                                            else element.innerText = txt1.erro
+                                        }
+                                    }
                                 }
                             }
                             cont++
