@@ -76,25 +76,49 @@ async function requestserver(autor, titulo, url) {
     let button = document.getElementById('buttonplay')
     let leitor = document.getElementById('leitor')
     let erro = document.getElementById('errotxt')
+    document.getElementById('txturl').innerHTML = ''
     leitor.innerHTML = ''
     erro.innerText = 'carregando...'
+    document.body.style.cursor = 'progress'
     let element = document.createElement('div')
     if (!txttoread[autor]) txttoread[autor] = {}
     if (!txttoread[autor][titulo]) {
         if (!url) {
             erro.innerText = 'houve um erro. tente novamente.'
         } else {
-            url = 'https://servermarxmp3.xaax.repl.co/?url=' + url
+            let xurl = 'https://servermarxmp3.xaax.repl.co/?url=' + url
             txttoread[autor][titulo] = { progresso: 0, url, texto: [] }
             if (!url.includes('.pdf')) {
-                let response = await fetch(url).catch( e => {
+                let response = await fetch(xurl).catch( e => {
                     erro.innerText = 'houve um erro, tente novamente'
                     return;
                 })
                 let txt = await response.json()
                 let e = document.createElement('div')
+                e.innerHTML = txt
                 if (!txt.erro) {
-                    e.innerHTML = txt
+                    if(txt.includes('class="toc"')) {
+                        txt = ''
+                        let paragrafos = e.children
+                        let cont = 0
+                        let total = paragrafos.length
+                        for (let par of paragrafos) {
+                            if(par.className == 'toc' && par.children[0].getAttribute("href")) {
+                                let capurl = url.replace('index.htm', par.children[0].getAttribute("href"))
+                                let response1 = await fetch('https://servermarxmp3.xaax.repl.co/?url=' + capurl).catch( e=> {
+                                    erro.innerText = 'houve um erro, tente novamente'
+                                    return;
+                                })
+                                let txt1 = await response1.json()
+                                if(!txt1.erro)  txt += txt1
+                                else element.innerText = txt1.erro
+                            }
+                            cont++
+                            leitor.innerText = `${cont}/${total}...`
+                        }
+                        leitor.innerText = ''
+                        e.innerHTML = txt
+                    }
                     let paragrafos = e.children
                     for (let par of paragrafos) {
                         let p = par.cloneNode(true)
@@ -109,7 +133,6 @@ async function requestserver(autor, titulo, url) {
                             p.innerHTML = p.innerHTML.replaceAll('href=', 'x')
                             txttoread[autor][titulo].texto.push(p.innerText)
                         }
-
                     }
                     erro.innerText = ''
                 } else element.innerText = txt.erro
@@ -130,6 +153,8 @@ async function requestserver(autor, titulo, url) {
     } else {
         txttoread[autor][titulo] = undefined
     }
+    document.body.style.cursor = 'auto'
+    document.getElementById('txturl').innerHTML = `fonte: <a href="${txttoread[autor][titulo].url}" style="color:#f00">${txttoread[autor][titulo].url}</a>`
     atualizafavoritos()
 }
 
@@ -174,7 +199,6 @@ function limpar(autor, titulo) {
         txttoread[autor][titulo].progresso = 0
         window.speechSynthesis.cancel()
         document.getElementById('progresso').innerText = ''
-        document.getElementById('buttonplay').dataset.titulo = 'none'
         document.getElementById('buttonclear').className = 'disabled'
         document.getElementById('buttonpause').className = 'disabled'
         document.getElementById('erroplay').innerText = ''
@@ -215,7 +239,7 @@ function showfavoritos() {
 }
 
 function atualizafavoritos() {
-    localStorage.setItem('txts', JSON.stringify(txttoread))
+    localStorage.setItem('txts', JSON.stringify({}))
     let menu = document.getElementById('menufavoritos')
     menu.innerHTML = ''
     Object.keys(txttoread).forEach(autor => {
@@ -223,7 +247,7 @@ function atualizafavoritos() {
         let e = document.createElement('div')
         let html = `<a class="autorfavoritos">${autor}</a><ul>`
         Object.keys(txttoread[autor]).forEach(texto => {
-            if (txttoread[autor][texto] && txttoread[autor][texto].progresso > 0) {
+            if (txttoread[autor][texto] && txttoread[autor][texto]) {
                 let inferno = texto.includes('"') ? "'" : '"'
                 html += `<li><a style="font-weight: bold;" onclick=${inferno}requestserver(\`${autor}\`, \`${texto}\`)${inferno}>
                         ${texto} (${txttoread[autor][texto].progresso}/${txttoread[autor][texto].texto.length} )

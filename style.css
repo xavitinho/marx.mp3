@@ -13,7 +13,7 @@ div {
 
 
 @media(max-width: 699px) {
-    body {
+    container {
         display: flex;
         flex-direction: column;
     }
@@ -23,7 +23,7 @@ div {
 }
 
 @media(min-width: 700px) {
-    body {
+    container {
         display: flex;
     }
     .coluna {
@@ -113,4 +113,3 @@ favoritos {
 #menufavoritos {
     padding: 0;
 }
-

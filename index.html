@@ -9,34 +9,38 @@
 </head>
 
 <body>
-  <div class="coluna" id="opcoes">
-    <favoritos>
-      <div id="favoritostitulo" onclick="showfavoritos()"> <span>textos em progresso</span>
-        <seta>▼</seta>
+  <container>
+    <div class="coluna" id="opcoes">
+      <favoritos>
+        <div id="favoritostitulo" onclick="showfavoritos()"> <span>textos em progresso</span>
+          <seta>▼</seta>
+        </div>
+        <div id="favoritos" style="display: none;">
+          <ul id="menufavoritos" class="menu"></ul>
+        </div>
+      </favoritos>
+      <div><select id="voiceSelect"></select></div>
+      <div>pesquise por um autor ou texto aqui: <input class="search" id="search" type="text"></div>
+      clique em um autor para ver seus textos:
+      <div id="menumenu" style="margin: 0;">
+       <ul id="menu" class="menu"></ul>
       </div>
-      <div id="favoritos" style="display: none;">
-        <ul id="menufavoritos" class="menu"></ul>
+      <div style="margin: 0; padding: 0;">todos os textos foram expropriados do site <a href="https://www.marxists.org/portugues/index.htm" style="color:#f00">marxists.org</a> </div>
+    </div>
+    <div class="coluna" id="right">
+      <div class="botoes">
+        <button onclick="play()" id="buttonplay" data-autor="none" data-titulo="none">tocar</button>
+        <button class="disabled" onclick="pause()" id="buttonpause">continuar</button>
+        <button class="disabled" onclick="limpar()" id="buttonclear" data-autor="none" data-titulo="none">parar e limpar progresso</button>
+        <div id="progresso"></div>
+        <p id="erroplay"></p>
       </div>
-    </favoritos>
-    <div><select id="voiceSelect"></select></div>
-    <div>pesquise por um autor ou texto aqui: <input class="search" id="search" type="text"></div>
-    clique em um autor para ver seus textos:
-    <div id="menumenu">
-     <ul id="menu" class="menu"></ul>
+      <div id="errotxt"></div>
+      <div id="leitor" style="margin: 0;">
+      </div>
+      <div id="txturl" style="margin: 0; padding: 0;"></div>
     </div>
-  </div>
-  <div class="coluna" id="right">
-    <div class="botoes">
-      <button onclick="play()" id="buttonplay" data-autor="none" data-titulo="none">tocar</button>
-      <button class="disabled" onclick="pause()" id="buttonpause">continuar</button>
-      <button class="disabled" onclick="limpar()" id="buttonclear" data-autor="none" data-titulo="none">parar e limpar progresso</button>
-      <div id="progresso"></div>
-      <p id="erroplay"></p>
-    </div>
-    <div id="errotxt"></div>
-    <div id="leitor">
-    </div>
-  </div>
+  </container>
   <script src="script.js"></script>
 </body>
 
