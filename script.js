@@ -83,7 +83,7 @@ async function createtxt(txt, html) {
         p.tagName != 'TITLE' &&
         p.tagName != 'TABLE' &&
         p.tagName != 'STYLE') {
-            txt.push(p.innerText)
+            txt.push(p.innerText.replaceAll('\n', ' ').replaceAll('\t', ''))
         }
     }
     return (txt)
@@ -217,7 +217,7 @@ function limpar(autor, titulo) {
 function speak(autor, titulo) {
     let progresso = txttoread[autor][titulo].progresso
     let total = txttoread[autor][titulo].texto.length
-    document.getElementById('progresso').innerText = `${(progresso / total * 100).toFixed(0)}% :   ${progresso}/${total} parágrafos ouvidos`
+    document.getElementById('progresso').innerHTML = `<strong>${(progresso / total * 100).toFixed(2)}%</strong> :   ${progresso}/${total} parágrafos ouvidos`
     if (progresso == total) {
         document.getElementById('erroplay').innerText = `você concluiu o texto ${titulo} de ${autor}!`
         limpar()

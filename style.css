@@ -9,6 +9,7 @@ div:not(#opcoes), select {
 body {
     background-color: #333;
     color: #fff;
+    font-family: 'Open sans light', sans-serif;
 }
 
 ::-webkit-scrollbar {
