@@ -36,3 +36,50 @@ body {
     height: 80%;
     overflow-y: scroll;
 }
+
+.disabled {
+    color: #ccc;
+}
+
+.disabled:hover {
+    cursor: not-allowed;
+}
+
+.menu a:hover:not(.autorfavoritos),
+button:hover:not(.disabled) {
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#favoritostitulo {
+    border: solid 1px #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+    margin: 0;
+}
+
+#favoritos {
+    position: absolute;
+    background-color: #fff;
+    border: solid 1px #ccc;
+    z-index: 1;
+    width: 100%;
+}
+
+#voiceSelect {
+    margin-top: 20px;
+}
+
+favoritos {
+    position: relative;
+        display: inline-block;
+        width:100%;
+}
+
+.botoes {
+    background-color: #ccc;
+    height: 100px;
+    padding: 20px
+}

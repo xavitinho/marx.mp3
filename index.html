@@ -10,15 +10,28 @@
 
 <body>
   <div class="coluna" id="opcoes">
+    <favoritos>
+      <div id="favoritostitulo" onclick="showfavoritos()"> <span>textos em progresso</span>
+        <seta>▼</seta>
+      </div>
+      <div id="favoritos" style="display: none;">
+        <ul id="menufavoritos" class="menu"></ul>
+      </div>
+    </favoritos>
     <div><select id="voiceSelect"></select></div>
     <div>pesquise por um autor ou texto aqui: <input class="search" id="search" type="text"></div>
-    <div>clique em um autor para ver seus textos:<ul id="menu" class="visible"></ul>
+    <div>clique em um autor para ver seus textos:<ul id="menu" class="menu"></ul>
     </div>
   </div>
   <div class="coluna" id="right">
-    <button onclick="play()" id="buttonplay" data-autor="none" data-titulo="none">falar</button>
-    <div id="progresso"></div>
-    <p id="erroplay"></p>
+    <div class="botoes">
+      <button onclick="play()" id="buttonplay" data-autor="none" data-titulo="none">tocar</button>
+      <button class="disabled" onclick="pause()" id="buttonpause">continuar</button>
+      <button class="disabled" onclick="limpar()" id="buttonclear" data-autor="none" data-titulo="none">parar e limpar progresso</button>
+      <div id="progresso"></div>
+      <p id="erroplay"></p>
+    </div>
+    <div id="errotxt"></div>
     <div id="leitor">
     </div>
   </div>

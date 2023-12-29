@@ -1,29 +1,21 @@
+var voices;
+
 function populateVoiceList() {
-    if (typeof speechSynthesis === "undefined") {
-        return;
-    }
-    const voices = speechSynthesis.getVoices();
+    if (typeof speechSynthesis === "undefined") return;
+    voices = speechSynthesis.getVoices();
     for (let i = 0; i < voices.length; i++) {
         const option = document.createElement("option");
         option.textContent = `${voices[i].name} (${voices[i].lang})`;
-
-        if (voices[i].default) {
-            option.textContent += " — DEFAULT";
-        }
+        if (voices[i].default) option.textContent += " — DEFAULT";
         option.setAttribute("data-lang", voices[i].lang);
         option.setAttribute("data-name", voices[i].name);
         document.getElementById("voiceSelect").appendChild(option);
     }
 }
-
 populateVoiceList();
 
-if (
-    typeof speechSynthesis !== "undefined" &&
-    speechSynthesis.onvoiceschanged !== undefined
-) {
+if (typeof speechSynthesis !== "undefined" && speechSynthesis.onvoiceschanged !== undefined)
     speechSynthesis.onvoiceschanged = populateVoiceList;
-}
 
 fetch('./store.json').then(response => {
     response.json().then(store => {
@@ -34,7 +26,8 @@ fetch('./store.json').then(response => {
             e.className = "autor visible"
             let html = `<a onclick="showtxts(\`${autor}\`)">${autor}</a><ul class = "invisible" id="#ul_${autor}">`
             store[autor].textos.forEach(({ titulo, url }) => {
-                html += `<li class="texto visible" data-autor="${autor}"><a onclick="requestserver(\`${autor}\`, \`${titulo}\`, \`${url}\`)">${titulo}</a></li>`
+                let inferno = titulo.includes('"') ? "'" : '"'
+                html += `<li class="texto visible" data-autor="${autor}"><a onclick=${inferno}requestserver(\`${autor}\`, \`${titulo}\`, \`${url}\`)${inferno}>${titulo}</a></li>`
             })
             html += '</ul>'
             e.innerHTML = html
@@ -76,63 +69,113 @@ function showtxts(autor) {
 
 let txttoread = {}
 
-function requestserver(autor, titulo, url) {
-    document.getElementById('erroplay').innerText = ''
-    let button = document.getElementById('buttonplay')
-    url = 'https://servermarxmp3.xaax.repl.co/?url=' + url
-    let leitor = document.getElementById('leitor')
-    leitor.innerText = 'carregando...'
-    if (!url.includes('.pdf')) {
-        fetch(url).then(response => {
-            response.json().then(txt => {
-                let e = document.createElement('div')
-                let element = document.createElement('div')
-                if (!txttoread[autor]) txttoread[autor] = {}
-                if (!txttoread[autor][titulo]) {
-                    txttoread[autor][titulo] = { progresso: 0, texto: [] }
-                    if (!txt.erro) {
-                        e.innerHTML = txt
-                        let paragrafos = e.children
-                        for (let par of paragrafos) {
-                            let p = par.cloneNode(true)
-                            if (p.className != "toplink" &&
-                                p.className != "info" &&
-                                p.className != "link" &&
-                                p.className != "tabela_datas" &&
-                                p.innerText.length > 0 &&
-                                p.tagName != 'TITLE' &&
-                                p.tagName != 'TABLE' &&
-                                p.tagName != 'STYLE') {
-                                console.log(p.tagName)
-                                while (p.innerHTML.indexOf('href=') > -1) p.innerHTML = p.innerHTML.replace('href=', 'x')
-                                txttoread[autor][titulo].texto.push(p.innerText)
-                            }
+async function requestserver(autor, titulo, url) {
 
-                        }
-                    } else element.innerText = txt.erro
-                }
-                txttoread[autor][titulo].texto.forEach(p => {
-                    element.innerHTML += `<p>${p}</p>`
+    let button = document.getElementById('buttonplay')
+    let leitor = document.getElementById('leitor')
+    let erro = document.getElementById('errotxt')
+    leitor.innerHTML = ''
+    erro.innerText = 'carregando...'
+    let element = document.createElement('div')
+    if (!txttoread[autor]) txttoread[autor] = {}
+    if (!txttoread[autor][titulo]) {
+        if (!url) {
+            erro.innerText = 'houve um erro. tente novamente.'
+        } else {
+            url = 'https://servermarxmp3.xaax.repl.co/?url=' + url
+            txttoread[autor][titulo] = { progresso: 0, url, texto: [] }
+            if (!url.includes('.pdf')) {
+                let response = await fetch(url).catch( e => {
+                    erro.innerText = 'houve um erro, tente novamente'
+                    return;
                 })
-                button.dataset.autor = autor
-                button.dataset.titulo = titulo
-                leitor.innerHTML = ''
-                leitor.appendChild(element)
-            })
-        })
+                let txt = await response.json()
+                let e = document.createElement('div')
+                if (!txt.erro) {
+                    e.innerHTML = txt
+                    let paragrafos = e.children
+                    for (let par of paragrafos) {
+                        let p = par.cloneNode(true)
+                        if (p.className != "toplink" &&
+                            p.className != "info" &&
+                            p.className != "link" &&
+                            p.className != "tabela_datas" &&
+                            p.innerText.length > 0 &&
+                            p.tagName != 'TITLE' &&
+                            p.tagName != 'TABLE' &&
+                            p.tagName != 'STYLE') {
+                            p.innerHTML = p.innerHTML.replaceAll('href=', 'x')
+                            txttoread[autor][titulo].texto.push(p.innerText)
+                        }
+
+                    }
+                    erro.innerText = ''
+                } else element.innerText = txt.erro
+            } else {
+                erro.innerText = ' o texto selecionado está no formato .pdf e não será possível lê-lo'
+            }
+        }
     } else {
-        leitor.innerText = ' o texto selecionado está no formato .pdf e não será possível lê-lo'
+        erro.innerText = ''
     }
+    if(erro.innerText.length == 0) {
+        txttoread[autor][titulo].texto.forEach(p => {
+            element.innerHTML += `<p>${p}</p>`
+        })
+        button.dataset.autor = autor
+        button.dataset.titulo = titulo
+        leitor.appendChild(element)
+    } else {
+        txttoread[autor][titulo] = undefined
+    }
+    console.log(txttoread)
 }
 
 function play() {
+    window.speechSynthesis.cancel()
     let erro = document.getElementById('erroplay')
     let button = document.getElementById('buttonplay')
     let { autor, titulo } = button.dataset
     if (titulo == 'none') erro.innerText = 'nenhum texto selecionado'
     else {
-        erro.innerText = `falando ${titulo} de ${autor}`
+        erro.innerHTML = `tocando <strong>${titulo}</strong> de ${autor}`
+        let buttonclear = document.getElementById('buttonclear')
+        buttonclear.dataset.autor = autor
+        buttonclear.dataset.titulo = titulo
         speak(autor, titulo)
+        let buttonpause = document.getElementById('buttonpause')
+        buttonpause.className = 'ativo'
+        buttonpause.innerText = 'pausar'
+        document.getElementById('buttonclear').className = 'button'
+    }
+}
+
+function pause() {
+    let button = document.getElementById('buttonpause')
+    if (button.className != 'disabled') {
+        if (button.innerText == 'pausar') {
+            button.innerText = 'continuar'
+            window.speechSynthesis.pause()
+        } else {
+            button.innerText = 'pausar'
+            window.speechSynthesis.resume()
+        }
+    }
+}
+
+function limpar() {
+    let button = document.getElementById('buttonclear')
+    if (button.className != 'disabled') {
+        window.speechSynthesis.cancel()
+        const { autor, titulo } = button.dataset
+        txttoread[autor][titulo].progresso = 0
+        document.getElementById('leitor').innerHTML = ''
+        document.getElementById('progresso').innerText = ''
+        document.getElementById('buttonplay').dataset.titulo = 'none'
+        document.getElementById('buttonclear').className = 'disabled'
+        document.getElementById('buttonpause').className = 'disabled'
+        document.getElementById('erroplay').innerText = ''
+        atualizafavoritos()
     }
 }
 
@@ -142,16 +185,51 @@ function speak(autor, titulo) {
     document.getElementById('progresso').innerText = `${(progresso / total * 100).toFixed(0)}% :   ${progresso}/${total} parágrafos ouvidos`
     if (progresso == total) {
         document.getElementById('erroplay').innerText = `você concluiu o texto ${titulo} de ${autor}!`
-        txttoread[autor][titulo].progresso = 0
-        document.getElementById('leitor').innerHTML = ''
-        document.getElementById('progresso').innerText = ''
-        document.getElementById('buttonplay').dataset.titulo = 'none'
+        limpar()
     } else {
         var to_speak = new SpeechSynthesisUtterance(txttoread[autor][titulo].texto[progresso]);
+        const selectedOption = document.getElementById("voiceSelect").selectedOptions[0].getAttribute("data-name");
+        for (let i = 0; i < voices.length; i++) {
+            if (voices[i].name === selectedOption) {
+                to_speak.voice = voices[i];
+            }
+        }
         window.speechSynthesis.speak(to_speak)
         to_speak.addEventListener("end", (event) => {
             txttoread[autor][titulo].progresso++
+            atualizafavoritos()
             speak(autor, titulo)
         })
     }
 }
+
+
+function showfavoritos() {
+    let e = document.getElementById('favoritos')
+    e.style.display = e.style.display == 'none' ? 'block' : 'none'
+    e = document.getElementsByTagName('seta')[0]
+    e.innerText = e.innerText == '▲' ? '▼' : '▲'
+}
+
+function atualizafavoritos() {
+    let menu = document.getElementById('menufavoritos')
+    menu.innerHTML = ''
+    Object.keys(txttoread).forEach(autor => {
+        let visible = false
+        let e = document.createElement('li')
+        let html = `<a class="autorfavoritos">${autor}</a><ul>`
+        Object.keys(txttoread[autor]).forEach(texto => {
+            if (txttoread[autor][texto] && txttoread[autor][texto].progresso > 0) {
+                let inferno = texto.includes('"') ? "'" : '"'
+                html += `<li><a onclick=${inferno}requestserver(\`${autor}\`, \`${texto}\`)${inferno}>
+                        ${texto} (${txttoread[autor][texto].progresso}/${txttoread[autor][texto].texto.length} )
+                        </a></li>`
+                visible = true
+            }
+        })
+        html += '</ul>'
+        e.innerHTML = html
+        if (visible) menu.appendChild(e)
+    })
+}
+
