@@ -1,24 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #333;
     color: #fff;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
 .invisible {
     display: none;
 }
 
-div {
-    margin-bottom: 20px;
+.coluna div {
+    margin-bottom: 10px;
 }
 
+.botoes p, .botoes div {
+    margin-bottom: 2px;
+    margin-top: 0;
+}
 
 @media(max-width: 699px) {
+    body {
+        font-size: 12px;
+    }
     container {
         display: flex;
         flex-direction: column;
     }
     .coluna {
-        height: 40vh;
+        width: 100%;
+        height: 50vh;
     }
 }
 
@@ -28,13 +46,13 @@ div {
     }
     .coluna {
         width: 50%;
-        height: 90vh;
+        height: 100vh;
     }
 }
 
 .coluna {
     border: solid 1px #fff;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -105,11 +123,15 @@ favoritos {
 
 .botoes {
     background-color: #ccc;
-    height: 100px;
-    padding: 20px;
+    padding: 10px;
     color: #000;
 }
 
 #menufavoritos {
     padding: 0;
+}
+
+
+#voiceSelect {
+    width: 100%;
 }

@@ -28,17 +28,18 @@
       <div style="margin: 0; padding: 0;">todos os textos foram expropriados do site <a href="https://www.marxists.org/portugues/index.htm" style="color:#f00">marxists.org</a> </div>
     </div>
     <div class="coluna" id="right">
+      <div>seu progresso será salvo automaticamente.</div>
       <div class="botoes">
-        <button onclick="play()" id="buttonplay" data-autor="none" data-titulo="none">tocar</button>
-        <button class="disabled" onclick="pause()" id="buttonpause">continuar</button>
-        <button class="disabled" onclick="limpar()" id="buttonclear" data-autor="none" data-titulo="none">parar e limpar progresso</button>
+        <div><button onclick="play()" id="buttonplay" data-autor="none" data-titulo="none">tocar</button>
+          <button class="disabled" onclick="pause()" id="buttonpause">continuar</button>
+          <button class="disabled" onclick="limpar()" id="buttonclear" data-autor="none" data-titulo="none">parar e limpar progresso</button></div>
         <div id="progresso"></div>
         <p id="erroplay"></p>
       </div>
       <div id="errotxt"></div>
       <div id="leitor" style="margin: 0;">
       </div>
-      <div id="txturl" style="margin: 0; padding: 0;"></div>
+      <div id="txturl" style="margin: 0; padding: 0; word-wrap: break-word;"></div>
     </div>
   </container>
   <script src="script.js"></script>
