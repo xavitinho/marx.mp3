@@ -67,10 +67,27 @@ function showtxts(autor) {
     e.className = e.className == 'invisible' ? 'visible' : 'invisible'
 }
 
-
 let txttoread = JSON.parse(localStorage.getItem('txts'))
 if (!txttoread) txttoread = {}
 atualizafavoritos()
+
+async function createtxt(txt, html) {
+    let e = document.createElement('div')
+    e.innerHTML = html
+    for(let p of e.children) {
+        if(p.className != "toplink" &&
+        p.className != "info" &&
+        p.className != "link" &&
+        p.className != "tabela_datas" &&
+        p.innerText.length > 0 &&
+        p.tagName != 'TITLE' &&
+        p.tagName != 'TABLE' &&
+        p.tagName != 'STYLE') {
+            txt.push(p.innerText)
+        }
+    }
+    return (txt)
+}
 
 async function requestserver(autor, titulo, url) {
     let button = document.getElementById('buttonplay')
@@ -80,28 +97,27 @@ async function requestserver(autor, titulo, url) {
     leitor.innerHTML = ''
     erro.innerText = 'carregando...'
     document.body.style.cursor = 'progress'
-    let element = document.createElement('div')
     if (!txttoread[autor]) txttoread[autor] = {}
     if (!txttoread[autor][titulo]) {
         if (!url) {
             erro.innerText = 'houve um erro. tente novamente.'
         } else {
             let xurl = 'https://servermarxmp3.xaax.repl.co/?url=' + url
-            txttoread[autor][titulo] = { progresso: 0, url, texto: [] }
+            txttoread[autor][titulo] = { progresso: 0, url, texto: [''] }
             if (!url.includes('.pdf')) {
                 let response = await fetch(xurl).catch(e => {
                     erro.innerText = 'houve um erro, tente novamente'
                     return;
                 })
                 let txt = await response.json()
-                let e = document.createElement('div')
-                e.innerHTML = txt
                 if (!txt.erro) {
                     if (txt.includes('class="toc"')) {
-                        txt = ''
+                        let e = document.createElement('div')
+                        e.innerHTML = txt
                         let paragrafos = e.children
                         let cont = 0
                         let total = paragrafos.length
+                        txt = ''
                         for (let par of paragrafos) {
                             if (par.className.includes('toc')) {
                                 if (par.children.length > 0) {
@@ -113,8 +129,8 @@ async function requestserver(autor, titulo, url) {
                                                 return;
                                             })
                                             let txt1 = await response1.json()
-                                            if (!txt1.erro) txt += txt1
-                                            else element.innerText = txt1.erro
+                                            if (!txt1.erro) txttoread[autor][titulo].texto = await createtxt(txttoread[autor][titulo].texto, txt1)
+                                            else leitor.innerText = txt1.erro
                                         }
                                     }
                                 }
@@ -123,25 +139,9 @@ async function requestserver(autor, titulo, url) {
                             leitor.innerText = `${cont}/${total}...`
                         }
                         leitor.innerText = ''
-                        e.innerHTML = txt
-                    }
-                    let paragrafos = e.children
-                    for (let par of paragrafos) {
-                        let p = par.cloneNode(true)
-                        if (p.className != "toplink" &&
-                            p.className != "info" &&
-                            p.className != "link" &&
-                            p.className != "tabela_datas" &&
-                            p.innerText.length > 0 &&
-                            p.tagName != 'TITLE' &&
-                            p.tagName != 'TABLE' &&
-                            p.tagName != 'STYLE') {
-                            p.innerHTML = p.innerHTML.replaceAll('href=', 'x')
-                            txttoread[autor][titulo].texto.push(p.innerText)
-                        }
-                    }
+                    } else txttoread[autor][titulo].texto = await createtxt([], txt)
                     erro.innerText = ''
-                } else element.innerText = txt.erro
+                } else leitor.innerText = txt.erro
             } else {
                 erro.innerText = ' o texto selecionado está no formato .pdf e não será possível lê-lo'
             }
@@ -150,12 +150,14 @@ async function requestserver(autor, titulo, url) {
         erro.innerText = ''
     }
     if (erro.innerText.length == 0) {
+        leitor.innerText = ''
+        let html = ''
         txttoread[autor][titulo].texto.forEach(p => {
-            element.innerHTML += `<p>${p}</p>`
+            html += `<p>${p}</p>`
         })
+        leitor.innerHTML += html
         button.dataset.autor = autor
         button.dataset.titulo = titulo
-        leitor.appendChild(element)
     } else {
         txttoread[autor][titulo] = undefined
     }
