@@ -171,15 +171,6 @@
             }
         ]
     },
-    "Alberto, Armanda Álvaro": {
-        "url": "https://www.marxists.org/portugues/alberto/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/alberto/ano/mes/40.pdf#page=135",
-                "titulo": "“Era uma vez...”"
-            }
-        ]
-    },
     "Alencar, Heron": {
         "url": "https://www.marxists.org/portugues/alencar/index.htm",
         "textos": [
@@ -282,15 +273,6 @@
             }
         ]
     },
-    "Alpatov, Mikhail Vladimirovich": {
-        "url": "https://www.marxists.org/portugues/alpatov/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/alpatov/../tematica/rev_prob/67/67.pdf",
-                "titulo": "Nova etapa na elaboração do Problema da transição do mundo antigo para a Idade Média"
-            }
-        ]
-    },
     "Alquati, Romano": {
         "url": "https://www.marxists.org/portugues/alquati/index.htm",
         "textos": [
@@ -321,7 +303,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/althusser/1968/02/filosofia.htm",
-                "titulo": ""
+                "titulo": "Althusser: A Filosoifa Como Uma Arama Revolucion&aacute;ria"
             },
             {
                 "url": "https://www.marxists.org/portugues/althusser/1969/mes/40.htm",
@@ -366,10 +348,6 @@
             {
                 "url": "https://www.marxists.org/portugues/althusser/1978/mes/fazer.htm",
                 "titulo": "O “Que” de “Que Fazer?” - primeiro capítulo do livro Que fazer?"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/althusser/ano/mes/capital.pdf",
-                "titulo": "Como ler \"O Capital\"? "
             }
         ]
     },
@@ -636,7 +614,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/amazonas/ano/mes/1935.htm",
-                "titulo": ""
+                "titulo": "1935: Assim se Conta a Hist&oacute;ria"
             }
         ]
     },
@@ -841,15 +819,6 @@
             }
         ]
     },
-    "Armand, Émile": {
-        "url": "https://www.marxists.org/portugues/armand-emile/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/armand-emile/1954/mes/90.pdf",
-                "titulo": "O individualismo anarquista"
-            }
-        ]
-    },
     "Armand, Inessa": {
         "url": "https://www.marxists.org/portugues/armand/index.htm",
         "textos": [
@@ -897,16 +866,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/arruda/1979/10/dirigente.htm",
-                "titulo": ""
-            }
-        ]
-    },
-    "Arshinov, Piotr Andreyevich": {
-        "url": "https://www.marxists.org/portugues/arshinov/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/arshinov/ano/mes/40.pdf",
-                "titulo": "A revolução social e o sindicalismo"
+                "titulo": "O Dirigente Comunista se Forja Todos os Dias"
             }
         ]
     },
@@ -934,15 +894,6 @@
             {
                 "url": "https://www.marxists.org/portugues/babo/livros/rda/index.htm",
                 "titulo": "República Democrática Alemã - Sociedade Socialista Avançada"
-            }
-        ]
-    },
-    "Badaloni, Nicola": {
-        "url": "https://www.marxists.org/portugues/badaloni/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/badaloni/1992/mes/40.pdf",
-                "titulo": "As \"três liberdades\" e o Marxismo"
             }
         ]
     },
@@ -1090,19 +1041,6 @@
             {
                 "url": "https://www.marxists.org/portugues/bakunin/ano/mes/secreta.htm",
                 "titulo": "Programa e Objetivo da Organização Secreta Revolucionária dos Irmãos Internacionais"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/bakunin/ano/mes/91.pdf",
-                "titulo": "Tática e Disciplina do Partido Revolucionário"
-            }
-        ]
-    },
-    "Baliño, Carlos": {
-        "url": "https://www.marxists.org/portugues/balino/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/balino/1924/05/30.pdf",
-                "titulo": "Lenin"
             }
         ]
     },
@@ -1304,7 +1242,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/barata/1950/05/figuras.htm",
-                "titulo": ""
+                "titulo": "Figuras do Movimento Oper&aacute;rio"
             }
         ]
     },
@@ -1339,15 +1277,6 @@
             {
                 "url": "https://www.marxists.org/portugues/basbaum/ano/mes/90.htm",
                 "titulo": "Os primeiros anos da Juventude Comunista do PCB"
-            }
-        ]
-    },
-    "Bayo, Alberto": {
-        "url": "https://www.marxists.org/portugues/bayo/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/bayo/1955/mes/40.pdf",
-                "titulo": "150 Perguntas a um Guerrilheiro"
             }
         ]
     },
@@ -1536,10 +1465,6 @@
             {
                 "url": "https://www.marxists.org/portugues/benjamin/1940/mes/90.htm",
                 "titulo": "Sobre o conceito de história"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/benjamin/livros/40.pdf",
-                "titulo": "Passagen"
             }
         ]
     },
@@ -1716,7 +1641,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/bensaid/ano/mes/keynes.htm",
-                "titulo": ""
+                "titulo": "E Depois de Keynes?"
             }
         ]
     },
@@ -1764,10 +1689,6 @@
             {
                 "url": "https://www.marxists.org/portugues/berkman/../goldman/1929/07/90.htm",
                 "titulo": "Sacco e Vanzetti"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/berkman/../goldman/ano/mes/kronstadt.pdf",
-                "titulo": "Lições e significância de Kronstadt"
             }
         ]
     },
@@ -1793,7 +1714,7 @@
         "textos": [
             {
                 "url": "https://www.marxists.org/portugues/berlioz/1947/01/luta.htm",
-                "titulo": ""
+                "titulo": "A Luta pela Democracia na Fran&ccedil;a"
             }
         ]
     },
@@ -1812,10 +1733,6 @@
             {
                 "url": "https://www.marxists.org/portugues/bernstein/1895/05/06.htm",
                 "titulo": "O julgamento de uma relação sexual anormal"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/bernstein/1909/04/90.pdf",
-                "titulo": "O Revisionismo na Social-Democracia"
             }
         ]
     },
@@ -1876,10 +1793,6 @@
             {
                 "url": "https://www.marxists.org/portugues/blanqui/1830/mes/procedimento.htm",
                 "titulo": "Procedimento de Recepção da “La Société des Saisons”"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/blanqui/ano/mes/40.pdf",
-                "titulo": "Sobre a Revolução"
             }
         ]
     },
@@ -1898,10 +1811,6 @@
             {
                 "url": "https://www.marxists.org/portugues/boffa/1989/08/40.htm",
                 "titulo": "A Europa na política internacional: segurança, coexistência e cooperação"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/boffa/ano/mes/40.pdf",
-                "titulo": "Introdução às Actas do Comité Central do Partido Operário Social-Democrata Russo (b) (Agosto de 1917 a Fevereiro de 1918)"
             }
         ]
     },
@@ -1985,7 +1894,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/bordiga/ano/mes/eleicoes.htm",
-                "titulo": ""
+                "titulo": "Elei&ccedil;&otilde;es"
             }
         ]
     },
@@ -2015,15 +1924,6 @@
             {
                 "url": "https://www.marxists.org/portugues/brandao/ano/mes/classe.htm",
                 "titulo": "A Classe Operária"
-            }
-        ]
-    },
-    "Brandler, Heinrich": {
-        "url": "https://www.marxists.org/portugues/brandler/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/brandler/../lozovski/1923/12/28.pdf",
-                "titulo": "Declaração a todas as organizações sindicalistas revolucionárias - Internacional Sindical Vermelha"
             }
         ]
     },
@@ -2267,15 +2167,6 @@
             }
         ]
     },
-    "Buey, Francisco Fernández": {
-        "url": "https://www.marxists.org/portugues/buey/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/buey/2007/mes/40.pdf",
-                "titulo": "Marx e os marxismos. Uma reflexão para o século XXI"
-            }
-        ]
-    },
     "Bukharin, Nikolai": {
         "url": "https://www.marxists.org/portugues/bukharin/index.htm",
         "textos": [
@@ -2298,10 +2189,6 @@
             {
                 "url": "https://www.marxists.org/portugues/bukharin/1923/05/90.htm",
                 "titulo": "Um Grande Partido Marxiano"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/bukharin/../tematica/livros/tempos-guerra/Escritos-essenciais-para-tempos-de-guerra.pdf",
-                "titulo": "A guerra e o desenvolvimento mundial"
             }
         ]
     },
@@ -2404,19 +2291,6 @@
             {
                 "url": "https://www.marxists.org/portugues/buonicore/ano/mes/40.htm",
                 "titulo": "Comunistas, Cultura e Intelectuais entre os anos de 1940 e 1950"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/buonicore/ano/mes/42.pdf",
-                "titulo": "Reflexões sobre o Marxismo e a Questão Racial"
-            }
-        ]
-    },
-    "Burns, Emile": {
-        "url": "https://www.marxists.org/portugues/burns/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/burns/1939/mes/40.pdf",
-                "titulo": "O que é o marxismo"
             }
         ]
     },
@@ -2518,10 +2392,6 @@
             {
                 "url": "https://www.marxists.org/portugues/cabral/ano/mes/50.htm",
                 "titulo": "Ter consciência em todo momento da situação da luta"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/cabral/../tematica/livros/perspectivas/40.pdf",
-                "titulo": "Do moribundo à flor: A dinâmica da historia em Amílcar Cabral"
             }
         ]
     },
@@ -2563,15 +2433,6 @@
             }
         ]
     },
-    "Caraça, Bento de Jesus": {
-        "url": "https://www.marxists.org/portugues/caraca/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/caraca/ano/mes/40.pdf",
-                "titulo": "110º aniversário do nascimento - Bento de Jesus Caraça"
-            }
-        ]
-    },
     "Carneiro, Edson": {
         "url": "https://www.marxists.org/portugues/carneiro/index.htm",
         "textos": [
@@ -2586,10 +2447,6 @@
             {
                 "url": "https://www.marxists.org/portugues/carneiro/1985/08/perfil.htm",
                 "titulo": "Perfil do Negro Brasileiro"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/carneiro/ano/mes/40.pdf",
-                "titulo": "O negro como objeto de ciência"
             }
         ]
     },
@@ -2643,10 +2500,6 @@
             {
                 "url": "https://www.marxists.org/portugues/carone/1995/07/movimento.htm",
                 "titulo": "Movimento Sindical e o Anarco-Sindicalismo"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/carone/2000/mes/40.pdf",
-                "titulo": "As origens da III Internacional Comunista"
             }
         ]
     },
@@ -2665,10 +2518,6 @@
             {
                 "url": "https://www.marxists.org/portugues/apolonio/1966/10/15.htm",
                 "titulo": "Por uma Política de Frente Ampla - Mas Independente e Consequente"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/apolonio/1988/06/40.pdf",
-                "titulo": "Entrevista a Teoria e Debate"
             }
         ]
     },
@@ -5190,15 +5039,6 @@
             }
         ]
     },
-    "Cerroni, Umberto": {
-        "url": "https://www.marxists.org/portugues/cerroni/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/cerroni/1992/04/40.pdf",
-                "titulo": "Ética e Política"
-            }
-        ]
-    },
     "Chasin, José": {
         "url": "https://www.marxists.org/portugues/chasin/index.htm",
         "textos": [
@@ -5257,10 +5097,6 @@
             {
                 "url": "https://www.marxists.org/portugues/chasin/ano/mes/metodo.htm",
                 "titulo": "Método Dialético"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/chasin/ano/mes/escola.pdf",
-                "titulo": "Sobre a Escola de Frankfurt"
             }
         ]
     },
@@ -5301,7 +5137,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/guevara/1961/04/burocratismo.htm",
-                "titulo": ""
+                "titulo": "Ernesto Che Guevara: Contra o Burocratismo"
             },
             {
                 "url": "https://www.marxists.org/portugues/guevara/1962/10/20.htm",
@@ -5309,7 +5145,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/guevara/1962/10/jovem.htm",
-                "titulo": ""
+                "titulo": "Ernesto Che Guevara: O Qu&ecirc; Deve Ser um Jovem Comunista"
             },
             {
                 "url": "https://www.marxists.org/portugues/guevara/1964/mes/guerra_povo.htm",
@@ -5329,7 +5165,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/guevara/1965/10/carta_ga.htm",
-                "titulo": ""
+                "titulo": "Ernesto Che Guevara: Carta de Despedida de Che a Fidel"
             },
             {
                 "url": "https://www.marxists.org/portugues/guevara/1965/10/carta.htm",
@@ -5337,11 +5173,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/guevara/1967/04/tricontinental.htm",
-                "titulo": ""
-            },
-            {
-                "url": "https://www.marxists.org/portugues/guevara/1967/04/90.pdf",
-                "titulo": "Criar dois, três... numerosos Vietnam - Mensagem à Tricontinental"
+                "titulo": "Ernesto Che Guevara: Mensagem aos Povos do Mundo Atrav&eacute;s da Tricontinental"
             }
         ]
     },
@@ -5360,15 +5192,6 @@
             {
                 "url": "https://www.marxists.org/portugues/chen_yun/1979/03/08.htm",
                 "titulo": "Problemas a Respeito do Planejamento e do Mercado"
-            }
-        ]
-    },
-    "Chtemiénko, Serguei Matéievitch": {
-        "url": "https://www.marxists.org/portugues/chtemenko/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/chtemenko/1968/mes/40.pdf",
-                "titulo": "Estava a URSS preparada para a guerra?"
             }
         ]
     },
@@ -5465,16 +5288,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/connolly/1899/mes/irlanda.htm",
-                "titulo": ""
-            }
-        ]
-    },
-    "Cotrim, Lívia": {
-        "url": "https://www.marxists.org/portugues/cotrim/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/cotrim/ano/mes/90.pdf",
-                "titulo": "Politicidade e alienação em Marx"
+                "titulo": "Libertemos Irlanda!"
             }
         ]
     },
@@ -5608,10 +5422,6 @@
             {
                 "url": "https://www.marxists.org/portugues/coutinho/2011/11/11.htm",
                 "titulo": "O marxismo é actual em termos de interpretação da realidade"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/coutinho/ano/mes/estado.pdf",
-                "titulo": "O Estado Brasileiro: Gênese, Crise, Alternativas"
             }
         ]
     },
@@ -5815,10 +5625,6 @@
             {
                 "url": "https://www.marxists.org/portugues/cunhal/ano/mes/arte.htm",
                 "titulo": "A arte e os intelectuais"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/cunhal/../tematica/rev_prob/67/67.pdf",
-                "titulo": "Figuras do Movimento Operário: Álvaro Cunhal"
             }
         ]
     },
@@ -5828,24 +5634,6 @@
             {
                 "url": "https://www.marxists.org/portugues/dang_xuan_ky/1993/06/teoria.htm",
                 "titulo": "A Teoria de Karl Marx e o Processo de Renovação Socialista no Vietnã"
-            }
-        ]
-    },
-    "Dangeville, Roger": {
-        "url": "https://www.marxists.org/portugues/dangeville/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/dangeville/1976/mes/40.pdf",
-                "titulo": "Prefácio  a \"Marx e Engels: Crítica da educação e do ensino\""
-            }
-        ]
-    },
-    "Darcy, Samuel Adams": {
-        "url": "https://www.marxists.org/portugues/darcy/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/darcy/ano/mes/40.pdf",
-                "titulo": "Como funcionava a democracia soviética nos anos 30"
             }
         ]
     },
@@ -5949,10 +5737,6 @@
             {
                 "url": "https://www.marxists.org/portugues/deutscher/1966/09/90.htm",
                 "titulo": "Sobre a Humanidade Socialista"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/deutscher/ano/mes/40.pdf",
-                "titulo": "A revolução inacabada (1917-1967)"
             }
         ]
     },
@@ -5974,10 +5758,6 @@
             {
                 "url": "https://www.marxists.org/portugues/dias/ano/mes/entrevista.htm",
                 "titulo": "Entrevista para o ADUR Informa"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/dias/ano/mes/91.pdf",
-                "titulo": "O constante desafio de decifrar a esfinge capitalista"
             }
         ]
     },
@@ -6240,10 +6020,6 @@
             {
                 "url": "https://www.marxists.org/portugues/einstein/1949/05/socialismo.htm",
                 "titulo": "Por que socialismo?"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/einstein/ano/mes/40.pdf",
-                "titulo": "O princípio da relatividade"
             }
         ]
     },
@@ -6937,7 +6713,7 @@
                 "titulo": "Carta a Ludwig Kugelmann"
             },
             {
-                "url": "https://www.marxists.org/portugues/marx/",
+                "url": "https://www.marxists.org/portugues/marx/1865/salario/index.htm",
                 "titulo": " Salário, preço e lucro"
             },
             {
@@ -6967,10 +6743,6 @@
             {
                 "url": "https://www.marxists.org/portugues/marx/1867/capital/index.htm",
                 "titulo": "O Capital - Crítica da Economia Política"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/marx/1867/ocapital-v1/index.htm",
-                "titulo": "Caps. I e VII"
             },
             {
                 "url": "https://www.marxists.org/portugues/marx/1867/capital/cap24/index.htm",
@@ -7431,24 +7203,6 @@
             }
         ]
     },
-    "Etiévant, Georges": {
-        "url": "https://www.marxists.org/portugues/etievant/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/etievant/1892/mes/40.pdf",
-                "titulo": "A minha defesa"
-            }
-        ]
-    },
-    "Fabbri, Luce": {
-        "url": "https://www.marxists.org/portugues/fabbri-luce/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/fabbri-luce/1963/mes/90.pdf",
-                "titulo": "Fascismo: definição e história"
-            }
-        ]
-    },
     "Fabbri Luigi": {
         "url": "https://www.marxists.org/portugues/fabbri/index.htm",
         "textos": [
@@ -7504,10 +7258,6 @@
             {
                 "url": "https://www.marxists.org/portugues/faco/1961/12/notas.htm",
                 "titulo": "Notas Sobre o Problema Agrário"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/faco/ano/mes/40.pdf",
-                "titulo": "O 18 de Brumário de Luis Bonaparte"
             }
         ]
     },
@@ -7656,10 +7406,6 @@
             {
                 "url": "https://www.marxists.org/portugues/fernandes/ano/mes/48.htm",
                 "titulo": "Prefácio à coletânea Cordéis de Pedro Macambira"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/fernandes/ano/mes/40.pdf",
-                "titulo": "Voando alto"
             }
         ]
     },
@@ -7721,15 +7467,6 @@
             {
                 "url": "https://www.marxists.org/portugues/fourier/1848/mes/90.htm",
                 "titulo": "Crítica dos Ideais Revolucionários"
-            }
-        ]
-    },
-    "Freitas, Alípio": {
-        "url": "https://www.marxists.org/portugues/freitas/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/freitas/2011/04/40.pdf",
-                "titulo": "Entrevista para o boletim do Festival 'Lisboa Capital República Popular'"
             }
         ]
     },
@@ -7879,10 +7616,6 @@
             {
                 "url": "https://www.marxists.org/portugues/galeano/ano/mes/consumo.htm",
                 "titulo": "O Império do Consumo"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/galeano/ano/mes/revista52-port.pdf",
-                "titulo": "Use-o e Jogue-o"
             }
         ]
     },
@@ -7903,24 +7636,6 @@
             }
         ]
     },
-    "Garroni, Stefano": {
-        "url": "https://www.marxists.org/portugues/garroni/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/garroni/2001/12/40.pdf",
-                "titulo": "Duas páginas sobre dialética"
-            }
-        ]
-    },
-    "Gascón, Amparo Poch y": {
-        "url": "https://www.marxists.org/portugues/gascon/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/gascon/1936/07/05.pdf",
-                "titulo": "…elogio do amor livre"
-            }
-        ]
-    },
     "Giap, Vo Nguyen": {
         "url": "https://www.marxists.org/portugues/giap/index.htm",
         "textos": [
@@ -7935,15 +7650,6 @@
             {
                 "url": "https://www.marxists.org/portugues/giap/ano/mes/exercito.htm",
                 "titulo": "Nascimento de um Exército"
-            }
-        ]
-    },
-    "Gika, Comandante": {
-        "url": "https://www.marxists.org/portugues/gika/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/gika/../tematica/mpla/pdf/72.pdf",
-                "titulo": "Reflexões sobre a luta de libertação nacional"
             }
         ]
     },
@@ -8501,19 +8207,6 @@
             {
                 "url": "https://www.marxists.org/portugues/gorz/1978/09/11.htm",
                 "titulo": "O que nos falta para sermos felizes"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/gorz/ano/mes/40.pdf",
-                "titulo": "O envelhecimento"
-            }
-        ]
-    },
-    "Gossweiler, Kurt": {
-        "url": "https://www.marxists.org/portugues/gossweiler/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/gossweiler/ano/mes/40.pdf",
-                "titulo": "A questão central: Como foi possível a subversão revisionista?"
             }
         ]
     },
@@ -8752,7 +8445,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/gramsci/1918/04/10.htm",
-                "titulo": ""
+                "titulo": "A escola e o jardim"
             },
             {
                 "url": "https://www.marxists.org/portugues/gramsci/1918/05/04.htm",
@@ -9097,15 +8790,6 @@
             }
         ]
     },
-    "Guha, Moni": {
-        "url": "https://www.marxists.org/portugues/guha/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/guha/1993/mes/40.pdf",
-                "titulo": "O colapso do socialismo"
-            }
-        ]
-    },
     "Guillaume, James ": {
         "url": "https://www.marxists.org/portugues/guillaume/index.htm",
         "textos": [
@@ -9128,15 +8812,6 @@
             }
         ]
     },
-    "Guimarães, Alberto Passos": {
-        "url": "https://www.marxists.org/portugues/guimaraes/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/guimaraes/1976/11/05.pdf",
-                "titulo": "O complexo agroindustrial no Brasil"
-            }
-        ]
-    },
     "Haldane, JBS": {
         "url": "https://www.marxists.org/portugues/haldane/index.htm",
         "textos": [
@@ -9156,24 +8831,6 @@
             {
                 "url": "https://www.marxists.org/portugues/hallas/1979/troski/index.htm",
                 "titulo": "Leão Trotski - Socialista Revolucionário"
-            }
-        ]
-    },
-    "Hampton, Fred ": {
-        "url": "https://www.marxists.org/portugues/hampton/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/hampton/1969/mes/40.pdf#page=96",
-                "titulo": "Fred Hampton assassinado por policiais fascistas"
-            }
-        ]
-    },
-    "Hamon, Augustin Frédéric": {
-        "url": "https://www.marxists.org/portugues/hamon/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/hamon/1921/07/05.pdf",
-                "titulo": "A crise do socialismo"
             }
         ]
     },
@@ -9273,10 +8930,6 @@
             {
                 "url": "https://www.marxists.org/portugues/harnecker/cadernos/02/index.htm",
                 "titulo": "Exploração Capitalista"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/harnecker/cadernos/06.pdf",
-                "titulo": "Socialismo e Comunismo"
             }
         ]
     },
@@ -9327,10 +8980,6 @@
             {
                 "url": "https://www.marxists.org/portugues/hegel/1822/04/religiao.htm",
                 "titulo": "Prefácio à Filosofia da Religião de Hinrichs [Sobre fé e razão]"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/hegel/ano/mes/90.pdf",
-                "titulo": "Coleção Educadores"
             }
         ]
     },
@@ -9450,10 +9099,6 @@
             {
                 "url": "https://www.marxists.org/portugues/ho_chi_minh/1969/05/10.htm",
                 "titulo": "Testamento"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/ho_chi_minh/../ho_chi_minh/ano/mes/40.pdf",
-                "titulo": "Poemas do Cárcere"
             }
         ]
     },
@@ -9487,15 +9132,6 @@
             {
                 "url": "https://www.marxists.org/portugues/hobsbawm/ano/mes/defesa.htm",
                 "titulo": "Em Defesa da História"
-            }
-        ]
-    },
-    "Holzkamp, Klaus": {
-        "url": "https://www.marxists.org/portugues/holzkamp/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/holzkamp/ano/ciencia/ciencia-marxista-do-sujeito-TOMO-II.pdf",
-                "titulo": "Ciência Marxista do Sujeito - Uma introdução à psicologia crítica - Tomo II"
             }
         ]
     },
@@ -9703,14 +9339,6 @@
             {
                 "url": "https://www.marxists.org/portugues/hoxha/1980/01/05.htm",
                 "titulo": "Agressores, fora do Afeganistão!"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/hoxha/1981/mes/40.pdf",
-                "titulo": "Com Stáline (recordações)"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/hoxha/1981/11/relatorio-8-congresso.pdf",
-                "titulo": "Relatório ao 8.º Congresso do Partido do Trabalho da Albânia"
             }
         ]
     },
@@ -9740,15 +9368,6 @@
             }
         ]
     },
-    "Hu Qiaomu": {
-        "url": "https://www.marxists.org/portugues/hu-qiaomu/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/hu-qiaomu/1951/mes/90.pdf",
-                "titulo": "Trinta Anos do Partido Comunista da China"
-            }
-        ]
-    },
     "Ianni, Octavio ": {
         "url": "https://www.marxists.org/portugues/ianni/index.htm",
         "textos": [
@@ -9775,10 +9394,6 @@
             {
                 "url": "https://www.marxists.org/portugues/ianni/2004/03/22.htm",
                 "titulo": "Governo do PT no Brasil: \"Uma nave de enlouquecidos\""
-            },
-            {
-                "url": "https://www.marxists.org/portugues/ianni/ano/mes/90.pdf",
-                "titulo": "O Estado-nação na época da globalização"
             }
         ]
     },
@@ -9930,15 +9545,6 @@
             }
         ]
     },
-    "Ingrao, Pietro": {
-        "url": "https://www.marxists.org/portugues/ingrao/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/ingrao/ano/mes/41.pdf",
-                "titulo": "Réplica da Moção 2"
-            }
-        ]
-    },
     "James, C.L.R": {
         "url": "https://www.marxists.org/portugues/james/index.htm",
         "textos": [
@@ -9984,10 +9590,6 @@
             {
                 "url": "https://www.marxists.org/portugues/juliao/1983/mes/40.htm",
                 "titulo": "Um depoimento para a história: O homem que agitou os canaviais"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/juliao/ano/mes/40.pdf",
-                "titulo": "Ligas Camponesas do Brasil"
             }
         ]
     },
@@ -10001,10 +9603,6 @@
             {
                 "url": "https://www.marxists.org/portugues/junior/1966/mes/90.htm",
                 "titulo": "A revolução brasileira"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/junior/1973/mes/90.pdf",
-                "titulo": "Teoria marxista do conhecimento e método dialético materialista"
             }
         ]
     },
@@ -10031,10 +9629,6 @@
             {
                 "url": "https://www.marxists.org/portugues/kaganovitch/1956/02/discurso.htm",
                 "titulo": "Discurso no XX Congresso do PCUS"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/kaganovitch/ano/mes/10.pdf",
-                "titulo": "Sobre a Resolução do CC do PCUS \"Sobre o Culto da Personalidade e as Suas Conseqüências\""
             }
         ]
     },
@@ -10062,7 +9656,7 @@
                 "titulo": "Do Artigo \"A Senda Gloriosa do Komsomol\""
             },
             {
-                "url": "https://www.marxists.org/portugues/kalinin/",
+                "url": "https://www.marxists.org/portugues/kalinin/1938/12/27.htm",
                 "titulo": "Discurso na Conferência de Professores Destacados das Escolas Urbanas e Rurais Convocada pela Redação da Utchítelskaia Gazeta (Jornal do Professor)"
             },
             {
@@ -10070,15 +9664,15 @@
                 "titulo": "Discurso na Solenidade em Honra dos Professores Rurais Condecorados"
             },
             {
-                "url": "https://www.marxists.org/portugues/kalinin/",
+                "url": "https://www.marxists.org/portugues/kalinin/1940/04/07.htm",
                 "titulo": "Discurso na Conferência de Alunos da Oitava, Nona e Décima Classes das Escolas Intermediárias Completas do Distrito Bauman de Moscou"
             },
             {
-                "url": "https://www.marxists.org/portugues/kalinin/",
+                "url": "https://www.marxists.org/portugues/kalinin/1940/05/08.htm",
                 "titulo": "Discurso na Reunião do Comitê Central da União das Juventudes Comunistas da URSS com os Secretários dos Comitês Regionais do Komsomol Encarregados do Trabalho entre os Escolares e os Pioneiros"
             },
             {
-                "url": "https://www.marxists.org/portugues/kalinin/",
+                "url": "https://www.marxists.org/portugues/kalinin/1941/04/17.htm",
                 "titulo": "Discurso na Reunião de Alunos da Oitava, Nona e Décima Classes das Escolas Intermediárias do Distrito Lênin de Moscou"
             },
             {
@@ -10086,7 +9680,7 @@
                 "titulo": "Tudo para Derrotrar o Inimigo"
             },
             {
-                "url": "https://www.marxists.org/portugues/kalinin/",
+                "url": "https://www.marxists.org/portugues/kalinin/1942/02/26.htm",
                 "titulo": "Discurso na Conferência dos Secretários das Organizações Rurais do Komsomol da Região de Moscou"
             },
             {
@@ -10102,11 +9696,11 @@
                 "titulo": "Tarefas Combativas do Komsomol nos Kolkhozes"
             },
             {
-                "url": "https://www.marxists.org/portugues/kalinin/",
+                "url": "https://www.marxists.org/portugues/kalinin/1942/10/22-1.htm",
                 "titulo": "Entrevista com os Dirigentes das Reservas de Mão de Obra do Estado e das Organizações do Komsomol das Escolas Profissionais, Ferroviárias e de Aprendizagem Industrial"
             },
             {
-                "url": "https://www.marxists.org/portugues/kalinin/",
+                "url": "https://www.marxists.org/portugues/kalinin/1942/11/02.htm",
                 "titulo": "Discurso na Reunião Comemorativa do XXV Aniversário da Grande Revolução Socialista de Outubro Celebrada pelos Alunos e pelo Pessoal das Escolas Profissionais, Ferroviárias e de Aprendizagem Industrial da Cidade de Moscou"
             },
             {
@@ -10597,10 +10191,6 @@
             {
                 "url": "https://www.marxists.org/portugues/korsch/ano/mes/conceito.htm",
                 "titulo": "O Conceito de Forças Produtivas Materiais"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/korsch/ano/mes/41.pdf",
-                "titulo": "Trotsky e a Revolução Permanente"
             }
         ]
     },
@@ -10610,10 +10200,6 @@
             {
                 "url": "https://www.marxists.org/portugues/kosik/1968/09/individuo.htm",
                 "titulo": "O Indivíduo e a História"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/kosik/1993/mes/90.pdf",
-                "titulo": "O homem, medida de todas as coisas "
             }
         ]
     },
@@ -10652,10 +10238,6 @@
             {
                 "url": "https://www.marxists.org/portugues/kropotkin/ano/mes/94.htm",
                 "titulo": "O Que Significa Revolução"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/kropotkin/ano/mes/93.pdf",
-                "titulo": "Sobre o Governo Representativo ou Parlamentarista"
             }
         ]
     },
@@ -10792,7 +10374,7 @@
                 "titulo": "Com todo o vapor ao Colapso"
             },
             {
-                "url": "https://www.marxists.org/portugues/kurz/",
+                "url": "https://www.marxists.org/portugues/kurz/1995/mes/90.htm",
                 "titulo": "Economia política do anti-semitismo - O pequeno-aburguesamento da Pós-Modernidade e o regresso da utopia do dinheiro de Silvio Gesell"
             },
             {
@@ -10896,7 +10478,7 @@
                 "titulo": "O Desfecho do Masoquismo Histórico - O capitalismo começa a libertar o homem do trabalho"
             },
             {
-                "url": "https://www.marxists.org/portugues/kurz/",
+                "url": "https://www.marxists.org/portugues/kurz/1997/08/24.htm",
                 "titulo": "Até a última gota - Como o Esclarecimento tornou-se mito e a promessa de liberdade converteu-se em 'total empulhação das massas'. Todas as monstruosidades da história retornam sob a máscara das ''coerções'' liberais"
             },
             {
@@ -11072,7 +10654,7 @@
                 "titulo": "Marx depois do Marxismo"
             },
             {
-                "url": "https://www.marxists.org/portugues/kurz/",
+                "url": "https://www.marxists.org/portugues/kurz/2000/10/29.htm",
                 "titulo": "O milagre fantasioso das telecomunicações - A Internet via celular virou uma espécie de pôquer do capital financeiro, com o qual o autismo do cassino-capitalismo parece ter atingido a autocombustão voluptuosa"
             },
             {
@@ -11116,11 +10698,11 @@
                 "titulo": " Natureza em ruínas"
             },
             {
-                "url": "https://www.marxists.org/portugues/kurz/",
+                "url": "https://www.marxists.org/portugues/kurz/2001/07/22.htm",
                 "titulo": "Democratas e cleptocratas - Quanto mais, nos anos 80 e 90, a cultura era economicizada, mais a economia era culturalizada no pensamento ideológico"
             },
             {
-                "url": "https://www.marxists.org/portugues/kurz/",
+                "url": "https://www.marxists.org/portugues/kurz/2001/07/18.htm",
                 "titulo": "O capitalista ambulante global - O capital transnacional não consegue substituir o Estado, embora lhe tenha subtraído o controlo sobre os processos monetários"
             },
             {
@@ -11152,11 +10734,11 @@
                 "titulo": "O declínio da última moeda hegemónica"
             },
             {
-                "url": "https://www.marxists.org/portugues/kurz/",
+                "url": "https://www.marxists.org/portugues/kurz/2002/01/13.htm",
                 "titulo": "A ignorância da sociedade do conhecimento - O estágio final da evolução intelectual moderna será uma macaqueação de nossas mais triviais ações por máquinas?"
             },
             {
-                "url": "https://www.marxists.org/portugues/kurz/",
+                "url": "https://www.marxists.org/portugues/kurz/2002/01/09.htm",
                 "titulo": "O estouro da Modernidade - Com tostões e canhões - Inovação com armas de fogo, expansão pela guerra: Uma olhada à pré-história do trabalho abstracto"
             },
             {
@@ -11196,11 +10778,11 @@
                 "titulo": "Contra-realismo"
             },
             {
-                "url": "https://www.marxists.org/portugues/kurz/",
+                "url": "https://www.marxists.org/portugues/kurz/2002/10/06.htm",
                 "titulo": "O desenvolvimento insustentável da natureza - Inundações e secas ocorridas nos últimos meses no mundo todo anunciam uma nova e grave dimensão da crise ecológica"
             },
             {
-                "url": "https://www.marxists.org/portugues/kurz/",
+                "url": "https://www.marxists.org/portugues/kurz/2002/11/24.htm",
                 "titulo": "A guerra contra a crise - O ataque ao Iraque não tem que ver com o regime de Saddam Hussein, mas com as contradições da globalização"
             },
             {
@@ -11288,7 +10870,7 @@
                 "titulo": "Quem é o Big Brother? - George Orwell e a crítica da modernidade"
             },
             {
-                "url": "https://www.marxists.org/portugues/kurz/",
+                "url": "https://www.marxists.org/portugues/kurz/2003/08/90.htm",
                 "titulo": "A Ideologia Anti-Alemã - Do antifascismo ao imperialismo de crise: crítica da novíssima essência sectária alemã de esquerda nos seus profetas teóricos"
             },
             {
@@ -11416,7 +10998,7 @@
                 "titulo": "A decadência do ocidente"
             },
             {
-                "url": "https://www.marxists.org/portugues/kurz/",
+                "url": "https://www.marxists.org/portugues/kurz/2004/10/04.htm",
                 "titulo": "Dead men working - Instruções de uso: como transformar a crítica emancipatória num objecto especulativo ao serviço da reprodução pessoal dum bando da intelligentsia lumpen"
             },
             {
@@ -11672,7 +11254,7 @@
                 "titulo": "O crepúsculo dos deuses na Volkswagen - Do corporativismo político à dinastia de clã"
             },
             {
-                "url": "https://www.marxists.org/portugues/kurz/",
+                "url": "https://www.marxists.org/portugues/kurz/2007/01/poder.htm",
                 "titulo": "Poder mundial e dinheiro mundial - A função económica da máquina militar dos Estados Unidos no capitalismo global e os motivos ocultos da nova crise financeira"
             },
             {
@@ -11768,7 +11350,7 @@
                 "titulo": "A prosperidade ilusória da indústria"
             },
             {
-                "url": "https://www.marxists.org/portugues/kurz/",
+                "url": "https://www.marxists.org/portugues/kurz/2007/mes/arvore.htm",
                 "titulo": "Cinzenta é a árvore dourada da vida e verde é a teoria - O problema da práxis como evergreen de uma crítica truncada do capitalismo e a história das esquerdas"
             },
             {
@@ -12405,15 +11987,6 @@
             }
         ]
     },
-    "Landauer, Gustav": {
-        "url": "https://www.marxists.org/portugues/landauer/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/landauer/1896/mes/40.pdf",
-                "titulo": "A social democracia na Alemanha"
-            }
-        ]
-    },
     "Langevin, Paul": {
         "url": "https://www.marxists.org/portugues/langevin/index.htm",
         "textos": [
@@ -12447,15 +12020,6 @@
             {
                 "url": "https://www.marxists.org/portugues/lavigne/1955/paz/index.htm",
                 "titulo": "Os Espiritualistas Perante a Paz e o Marxismo ou A Perfectibilidade do Espírito, pelo Socialismo"
-            }
-        ]
-    },
-    "Leacock, Eleanor Burke": {
-        "url": "https://www.marxists.org/portugues/leacock/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/leacock/1980/mes/90.pdf",
-                "titulo": "Mitos da Dominação Masculina - Uma Coletânea de Artigos sobre as Mulheres numa Perspectiva Transcultural"
             }
         ]
     },
@@ -12574,7 +12138,7 @@
                 "titulo": "Anarquismo e Socialismo"
             },
             {
-                "url": "https://www.marxists.org/portugues/lenin/",
+                "url": "https://www.marxists.org/portugues/lenin/1902/quefazer/index.htm",
                 "titulo": "Que Fazer? Problemas Candentes do Nosso Movimento"
             },
             {
@@ -12630,7 +12194,7 @@
                 "titulo": "Ao Proletariado Russo"
             },
             {
-                "url": "https://www.marxists.org/portugues/lenin/",
+                "url": "https://www.marxists.org/portugues/lenin/1904/passo/index.htm",
                 "titulo": "Um Passo em Frente Dois Passos Atrás"
             },
             {
@@ -13194,7 +12758,7 @@
                 "titulo": "Os Objetivos da Oposição em França"
             },
             {
-                "url": "https://www.marxists.org/portugues/lenin/",
+                "url": "https://www.marxists.org/portugues/lenin/1916/imperialismo/index.htm",
                 "titulo": "O Imperialismo, Fase Superior do Capitalismo"
             },
             {
@@ -13402,7 +12966,7 @@
                 "titulo": "Ao Comité Central do POSDR"
             },
             {
-                "url": "https://www.marxists.org/portugues/lenin/",
+                "url": "https://www.marxists.org/portugues/lenin/1917/08/estadoerevolucao/index.htm",
                 "titulo": "O Estado e a Revolução"
             },
             {
@@ -13538,7 +13102,7 @@
                 "titulo": "À População"
             },
             {
-                "url": "https://www.marxists.org/portugues/lenin/",
+                "url": "https://www.marxists.org/portugues/lenin/1917/11/19-01.htm",
                 "titulo": "Do Comité Central do Partido Operário Social-Democrata da Rússia (bolchevique) - A Todos os Membros do Partido e a Todas as Classes Trabalhadoras da Rússia "
             },
             {
@@ -13582,7 +13146,7 @@
                 "titulo": "Projecto de Decreto sobre a aplicação da Nacionalização dos Bancos e sobre as medidas necessárias em ligação com isto"
             },
             {
-                "url": "https://www.marxists.org/portugues/lenin/",
+                "url": "https://www.marxists.org/portugues/lenin/1917/12/17.htm",
                 "titulo": "Relatório sobre a Situação Económica dos Operários de Petrogrado e as Tarefas da Classe Operária na Reunião da Secção Operária do Soviete de Deputados Operários e Soldados de Petrogrado"
             },
             {
@@ -13806,7 +13370,7 @@
                 "titulo": "VIII Congresso do PCR(b)"
             },
             {
-                "url": "https://www.marxists.org/portugues/lenin/",
+                "url": "https://www.marxists.org/portugues/lenin/1919/03/23-01.htm",
                 "titulo": "VIII Congresso do PC(b) da Rússia: Discurso de abertura; Informe sobre o trabalho no campo e Resolução sobre a atitude em relação ao camponês médio"
             },
             {
@@ -13834,7 +13398,7 @@
                 "titulo": "Como Livrar para Sempre os Trabalhadores do Jugo dos Latifundiários e Capitalistas"
             },
             {
-                "url": "https://www.marxists.org/portugues/lenin/",
+                "url": "https://www.marxists.org/portugues/lenin/1919/03/30.htm",
                 "titulo": "Sobre a candidatura de M. I. Kalinin para o cargo de presidente do Comitê Executivo Central de Toda a Rússia  - Discurso na XII Sessão do CEC de Toda a Rússia"
             },
             {
@@ -13914,7 +13478,7 @@
                 "titulo": "Dois anos de Poder Soviético"
             },
             {
-                "url": "https://www.marxists.org/portugues/lenin/",
+                "url": "https://www.marxists.org/portugues/lenin/1919/11/07-01.htm",
                 "titulo": "Dois anos de Poder Soviético  - Discurso na Reunião Conjunta do CEC de Toda a Rússia, do Soviete de Deputados Operários e Camponeses de Moscou, do Conselho Central dos Sindicatos de Toda a Rússia e dos Comitês de Fábrica, consagrada ao segundo aniversario da Revolução de Outubro"
             },
             {
@@ -13978,7 +13542,7 @@
                 "titulo": "Da destruição de um Regime Secular à criação de um Novo Regime"
             },
             {
-                "url": "https://www.marxists.org/portugues/lenin/",
+                "url": "https://www.marxists.org/portugues/lenin/1920/esquerdismo/index.htm",
                 "titulo": "Esquerdismo - Doença Infantil do Comunismo"
             },
             {
@@ -14062,7 +13626,7 @@
                 "titulo": "Discurso sobre o Imposto em Espécie"
             },
             {
-                "url": "https://www.marxists.org/portugues/lenin/",
+                "url": "https://www.marxists.org/portugues/lenin/1921/04/25.htm",
                 "titulo": "Discursos Gravados em Disco: Os Sem Partido e o Poder Soviético e Sobre o Imposto em Espécie ou Sobre o Imposto em Espécie e a Livre Troca de Excedentes de Cereais"
             },
             {
@@ -14132,14 +13696,6 @@
             {
                 "url": "https://www.marxists.org/portugues/lenin/1922/mes/frente-unica.htm",
                 "titulo": "Carta para N. I. Bukharin e G. Y. Zinoviev"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/lenin/",
-                "titulo": "Carta aos Membros do Politburo do CC do PCR(b) com observações ao Projeto de Resolução para a Primeira Plenária Ampliada da Executiva do Comintern sobre a participação em uma Conferências das Três Internacionais"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/lenin/",
-                "titulo": "Carta aos Membros do Politburo do CC do PCR(b) com propostas sobre o Projeto de Diretivas da Executiva do Comintern para a Delegação do Comintern na Conferência das Três Internacionais"
             },
             {
                 "url": "https://www.marxists.org/portugues/lenin/1922/03/27.htm",
@@ -14284,19 +13840,6 @@
             {
                 "url": "https://www.marxists.org/portugues/leuenroth/ano/mes/anarquismo.htm",
                 "titulo": "Anarquismo Roteiro da Libertação Social"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/leuenroth/ano/mes/40.pdf",
-                "titulo": "Carta ao jornal Estado de São Paulo sobre a Greve Geral de 1917"
-            }
-        ]
-    },
-    "Lewin, Moshe": {
-        "url": "https://www.marxists.org/portugues/lewin/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/lewin/1968/mes/o-ultimo-combate-de-lenine.pdf",
-                "titulo": "O último combate de Lenine"
             }
         ]
     },
@@ -14356,15 +13899,6 @@
             {
                 "url": "https://www.marxists.org/portugues/lifschits/1958/mes/estranho.htm",
                 "titulo": "Socialismo Estranho"
-            }
-        ]
-    },
-    "Lima, José Inácio de Abreu e ": {
-        "url": "https://www.marxists.org/portugues/lima-abreu/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/lima-abreu/1855/04/90.pdf",
-                "titulo": "O Socialismo"
             }
         ]
     },
@@ -14741,10 +14275,6 @@
             {
                 "url": "https://www.marxists.org/portugues/lunatcharski/1918/09/arte.htm",
                 "titulo": "Proletariado e arte"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/lunatcharski/1919/mes/90.pdf",
-                "titulo": "O problema da cultura socialista"
             }
         ]
     },
@@ -14754,10 +14284,6 @@
             {
                 "url": "https://www.marxists.org/portugues/luria/1984/mes/40.htm",
                 "titulo": "O problema da linguagem e da consciência"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/luria/ano/mes/90.pdf",
-                "titulo": "A atividade consciente do homem e suas raízes histórico-sociais"
             }
         ]
     },
@@ -14769,7 +14295,7 @@
                 "titulo": "Vasco Gonçalves: Perfil de um Homem"
             },
             {
-                "url": "https://www.marxists.org/portugues/luso/",
+                "url": "https://www.marxists.org/portugues/luso/livros/politica/index.htm",
                 "titulo": "Introdução à Política I"
             }
         ]
@@ -15045,10 +14571,6 @@
             {
                 "url": "https://www.marxists.org/portugues/luxemburgo/1919/01/ordem.htm",
                 "titulo": "A Ordem Reina em Berlim"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/luxemburgo/ano/mes/41.pdf",
-                "titulo": "Segredos de um pátio de prisão"
             }
         ]
     },
@@ -15058,10 +14580,6 @@
             {
                 "url": "https://www.marxists.org/portugues/lu-xun/1919/03/40.htm",
                 "titulo": "Kung I-Chi"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/lu-xun/1918/04/90.pdf",
-                "titulo": "A verdadeira história de A Q"
             }
         ]
     },
@@ -15083,19 +14601,6 @@
             {
                 "url": "https://www.marxists.org/portugues/machajski/1917/mes/90.htm",
                 "titulo": "O socialismo de Estado"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/machajski/../guerin/ano/mes/40.pdf",
-                "titulo": "O golpe de Estado de outubro"
-            }
-        ]
-    },
-    "Machel, Josina ": {
-        "url": "https://www.marxists.org/portugues/machel-josina/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/machel-josina/ano/mes/40.pdf",
-                "titulo": "É neste momento"
             }
         ]
     },
@@ -15135,7 +14640,7 @@
                 "titulo": "A Libertação da Mulher é uma Necessidade da Revolução, Garantia da sua Continuidade, Condição do seu Triunfo"
             },
             {
-                "url": "https://www.marxists.org/portugues/machel/",
+                "url": "https://www.marxists.org/portugues/machel/1973/mes/manobras.htm",
                 "titulo": "Impermeabilizemo-nos Contra as Manobras Subversivas Intensificando a Ofensiva Ideológica e Organizacional no Seio dos Combatentes e Massas"
             },
             {
@@ -15177,10 +14682,6 @@
             {
                 "url": "https://www.marxists.org/portugues/machel/ano/mes/luta.htm",
                 "titulo": "A Luta Continua"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/machel/ano/mes/processo.pdf",
-                "titulo": "O Processo da Revolução Democrática Popular em Moçambique"
             }
         ]
     },
@@ -15207,10 +14708,6 @@
             {
                 "url": "https://www.marxists.org/portugues/makarenko/educa/index.htm",
                 "titulo": "O Socialimo e a Educação dos Filhos"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/makarenko/ano/mes/40.pdf",
-                "titulo": "Os órgãos de autogestão"
             }
         ]
     },
@@ -15228,10 +14725,6 @@
             {
                 "url": "https://www.marxists.org/portugues/makhno/1927/06/90.htm",
                 "titulo": "Sobre a defesa da Revolução"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/makhno/ano/mes/90.pdf",
-                "titulo": "O grande outubro na Ucrânia"
             }
         ]
     },
@@ -15241,10 +14734,6 @@
             {
                 "url": "https://www.marxists.org/portugues/maksimovski/../ossinski/1920/03/28.htm",
                 "titulo": "Teses sobre a direção colegiada e a direção individual"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/maksimovski/../preobrazhensky/1923/10/15.pdf",
-                "titulo": "Manifesto dos 46"
             }
         ]
     },
@@ -15410,10 +14899,6 @@
             {
                 "url": "https://www.marxists.org/portugues/malatesta/ano/mes/anarquismo.htm",
                 "titulo": "Anarquismo Libertário e Revisionismo Autoritário"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/malatesta/ano/mes/41.pdf",
-                "titulo": "Solução anarquista para a questão social"
             }
         ]
     },
@@ -15472,12 +14957,8 @@
         "url": "https://www.marxists.org/portugues/mandel/index.htm",
         "textos": [
             {
-                "url": "https://www.marxists.org/portugues/mandel/1967/10/22.htm",
-                "titulo": ""
-            },
-            {
                 "url": "https://www.marxists.org/portugues/mandel/1967/12/teoria.htm",
-                "titulo": ""
+                "titulo": "A Teoria do Valor-Trabalho e o Capitalismo Monopolista"
             },
             {
                 "url": "https://www.marxists.org/portugues/mandel/1967/teoria/index.htm",
@@ -15493,11 +14974,11 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/mandel/1968/crise/index.htm",
-                "titulo": ""
+                "titulo": "A Crise do Sistema Monet&aacute;rio Internacional"
             },
             {
                 "url": "https://www.marxists.org/portugues/mandel/1969/fascismo/index.htm",
-                "titulo": ""
+                "titulo": "Sobre o Fascismo"
             },
             {
                 "url": "https://www.marxists.org/portugues/mandel/1971/03/40.htm",
@@ -15509,11 +14990,11 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/mandel/1974/12/ataques.htm",
-                "titulo": ""
+                "titulo": "Os Ataques Contra as Liberdades Sindicais"
             },
             {
                 "url": "https://www.marxists.org/portugues/mandel/1977/09/01.htm",
-                "titulo": ""
+                "titulo": "Os amargos frutos do “socialismo” num só país"
             },
             {
                 "url": "https://www.marxists.org/portugues/mandel/1978/mes/90.htm",
@@ -15581,7 +15062,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/mandel/1993/09/21.htm",
-                "titulo": ""
+                "titulo": "A Natureza do Reformismo Social-Democrata"
             },
             {
                 "url": "https://www.marxists.org/portugues/mandel/ano/mes/burocracia.htm",
@@ -15609,7 +15090,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/mandel/ano/mes/teoria.htm",
-                "titulo": ""
+                "titulo": "Teoria Marxista do Estado"
             }
         ]
     },
@@ -15676,7 +15157,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/mao/1929/12/elimina.htm",
-                "titulo": ""
+                "titulo": "Sobre a Elimina&ccedil;&atilde;o das Concep&ccedil;&otilde;es Erradas no Seio do Partido"
             },
             {
                 "url": "https://www.marxists.org/portugues/mao/1930/01/05.htm",
@@ -16364,10 +15845,6 @@
             {
                 "url": "https://www.marxists.org/portugues/mariategui/ano/defesa/06.htm",
                 "titulo": "Ética e Socialismo"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/mariategui/ano/mes/40.pdf",
-                "titulo": "Mariátegui"
             }
         ]
     },
@@ -16432,31 +15909,31 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/marighella/1947/12/politica_05.htm",
-                "titulo": ""
+                "titulo": "Marighella: Nossa Pol&iacute;tica - Problemas n&ordm; 5"
             },
             {
                 "url": "https://www.marxists.org/portugues/marighella/1948/01/politica_06.htm",
-                "titulo": ""
+                "titulo": "Marighella: Nossa Pol&iacute;tica - Janeiro 1948"
             },
             {
                 "url": "https://www.marxists.org/portugues/marighella/1948/02/politica_07.htm",
-                "titulo": ""
+                "titulo": "Marighella: Nossa Pol&iacute;tica - Problemas n&ordm; 7"
             },
             {
                 "url": "https://www.marxists.org/portugues/marighella/1948/07/politica_12.htm",
-                "titulo": ""
+                "titulo": "Marighella: Nossa Pol&iacute;tica - Problemas n&ordm; 12"
             },
             {
                 "url": "https://www.marxists.org/portugues/marighella/1948/09/politica_13.htm",
-                "titulo": ""
+                "titulo": "Marighella: Nossa Pol&iacute;tica"
             },
             {
                 "url": "https://www.marxists.org/portugues/marighella/1948/10/politica_14.htm",
-                "titulo": ""
+                "titulo": "Marighella: Nossa Pol&iacute;tica - Problemas 14"
             },
             {
                 "url": "https://www.marxists.org/portugues/marighella/1949/03/politica17.htm",
-                "titulo": ""
+                "titulo": "Nossa Pol&iacute;tica"
             },
             {
                 "url": "https://www.marxists.org/portugues/marighella/../tematica/rev_prob/26/politica.htm",
@@ -16646,10 +16123,6 @@
             {
                 "url": "https://www.marxists.org/portugues/marini/ano/mes/memoria.htm",
                 "titulo": "Memória"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/marini/ano/mes/87.pdf",
-                "titulo": "Sentido e perspectivas da Aliança para o Progresso"
             }
         ]
     },
@@ -16700,10 +16173,6 @@
             {
                 "url": "https://www.marxists.org/portugues/martens/ano/mes/luta.htm",
                 "titulo": "Mao Tse-tung e Enver Hoxha e a Luta sobre duas Frentes"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/martens/ano/mes/40.pdf",
-                "titulo": "Balanço do Colapso da URSS e outros escritos"
             }
         ]
     },
@@ -16747,10 +16216,6 @@
             {
                 "url": "https://www.marxists.org/portugues/eleanor/1897/03/06.htm",
                 "titulo": "O Capital"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/eleanor/ano/mes/90.pdf",
-                "titulo": "Karl Marx III"
             }
         ]
     },
@@ -17403,7 +16868,7 @@
                 "titulo": "Carta a Ludwig Kugelmann"
             },
             {
-                "url": "https://www.marxists.org/portugues/marx/",
+                "url": "https://www.marxists.org/portugues/marx/1865/salario/index.htm",
                 "titulo": " Salário, preço e lucro"
             },
             {
@@ -17429,14 +16894,6 @@
             {
                 "url": "https://www.marxists.org/portugues/marx/1867/capital/livro1/prefacios/01.htm",
                 "titulo": "Carta a Engels"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/marx/1867/capital/index.htm",
-                "titulo": "O Capital - Crítica da Economia Política"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/marx/1867/ocapital-v1/index.htm",
-                "titulo": "Caps. I e VII"
             },
             {
                 "url": "https://www.marxists.org/portugues/marx/1867/capital/cap24/index.htm",
@@ -17888,15 +17345,6 @@
             }
         ]
     },
-    "Marxhausen, Thomas": {
-        "url": "https://www.marxists.org/portugues/marxhausen/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/marxhausen/2006/08/40.pdf",
-                "titulo": "História crítica das Obras completas de Marx e Engels (MEGA)"
-            }
-        ]
-    },
     "Mattick, Paul": {
         "url": "https://www.marxists.org/portugues/mattick/index.htm",
         "textos": [
@@ -17967,19 +17415,6 @@
             {
                 "url": "https://www.marxists.org/portugues/mattick/1972/mes/homem.htm",
                 "titulo": "O Homem Unidimensional na Sociedade de Classes"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/mattick/ano/mes/40.pdf",
-                "titulo": "Otho Rühle e o Movimento Operário Alemão"
-            }
-        ]
-    },
-    "Maximoff, Grigori Petrovich": {
-        "url": "https://www.marxists.org/portugues/maximoff/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/maximoff/ano/mes/90.pdf",
-                "titulo": "Sindicalistas na Revolução Russa "
             }
         ]
     },
@@ -18040,24 +17475,6 @@
             {
                 "url": "https://www.marxists.org/portugues/mehring/1897/mes/lirica.htm",
                 "titulo": "A Lírica Socialista"
-            }
-        ]
-    },
-    "Mella, Julio Antonio": {
-        "url": "https://www.marxists.org/portugues/mella-julio/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/mella-julio/1928/mes/40.pdf",
-                "titulo": "Outubro"
-            }
-        ]
-    },
-    "Mella, Ricardo": {
-        "url": "https://www.marxists.org/portugues/mella/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/mella/1906/mes/40.pdf",
-                "titulo": "Aos camponeses"
             }
         ]
     },
@@ -18132,19 +17549,6 @@
             {
                 "url": "https://www.marxists.org/portugues/meszaros/2015/04/22.htm",
                 "titulo": "A disputa pelo Estado"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/meszaros/ano/mes/40.pdf",
-                "titulo": "A incontrolabilidade do capital e sua globalização"
-            }
-        ]
-    },
-    "Mett, Ida": {
-        "url": "https://www.marxists.org/portugues/mett/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/mett/1968/06/40.pdf",
-                "titulo": "O campesinato russo na revolução e na pós-revolução"
             }
         ]
     },
@@ -18171,10 +17575,6 @@
             {
                 "url": "https://www.marxists.org/portugues/meyer/ano/mes/notas.htm",
                 "titulo": "Notas sobre Thalheimer"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/meyer/ano/mes/roteiro.pdf",
-                "titulo": "Para um Estudo do Fascismo Alemão "
             }
         ]
     },
@@ -18294,10 +17694,6 @@
             {
                 "url": "https://www.marxists.org/portugues/montenegro/1960/08/11.htm",
                 "titulo": "As Teses Esqueceram o Trabalho entre as Mulheres"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/montenegro/1985/mes/40.pdf",
-                "titulo": "Mulheres - participação nas lutas populares"
             }
         ]
     },
@@ -18336,10 +17732,6 @@
             {
                 "url": "https://www.marxists.org/portugues/moreno/1985/mes/troskista.htm",
                 "titulo": "Ser Trotskista Hoje"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/moreno/ano/mes/90.pdf",
-                "titulo": "Conceitos Básicos do Materialismo Histórico "
             }
         ]
     },
@@ -18429,10 +17821,6 @@
             {
                 "url": "https://www.marxists.org/portugues/moura/2001/mes/quilombagem.htm",
                 "titulo": "A Quilombagem como Expressão de Protesto Radical"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/moura/ano/mes/40.pdf",
-                "titulo": "Racismo e Lutas de Classes no Brasil"
             }
         ]
     },
@@ -18464,10 +17852,6 @@
             {
                 "url": "https://www.marxists.org/portugues/neto/1979/01/08.htm",
                 "titulo": "Angola tem uma Caracterísitca Cultural Própria, Resultante da sua História"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/neto/ano/mes/40.pdf",
-                "titulo": "A propósito da reconstrução nacional"
             }
         ]
     },
@@ -18502,10 +17886,6 @@
             {
                 "url": "https://www.marxists.org/portugues/nietzsche/1888/10/ecce_homo.htm",
                 "titulo": "Ecce Homo ou como se chega a ser o que se é"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/nietzsche/ano/mes/vontade.pdf",
-                "titulo": "Vontade de Potência - Ensaio de uma transmutação de todos os valores "
             }
         ]
     },
@@ -18569,10 +17949,6 @@
             {
                 "url": "https://www.marxists.org/portugues/novack/1968/historia/index.htm",
                 "titulo": "Compreendendo a História"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/novack/1969/mes/40.pdf",
-                "titulo": "Introdução à Lógica Marxista"
             }
         ]
     },
@@ -18640,10 +18016,6 @@
             {
                 "url": "https://www.marxists.org/portugues/oliveira-chico/2012/10/40.htm",
                 "titulo": "Jeitinho e jeitão - Uma tentativa de interpretação do caráter brasileiro"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/oliveira-chico/ano/mes/40.pdf",
-                "titulo": "Democratização e Republicanização do Estado"
             }
         ]
     },
@@ -18661,10 +18033,6 @@
             {
                 "url": "https://www.marxists.org/portugues/ossinski/1920/03/28.htm",
                 "titulo": "Teses sobre a direção colegiada e a direção individual"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/ossinski/../preobrazhensky/1923/10/15.pdf",
-                "titulo": "Manifesto dos 46"
             }
         ]
     },
@@ -18708,10 +18076,6 @@
             {
                 "url": "https://www.marxists.org/portugues/pajetta/../tematica/livros/pci/04.htm",
                 "titulo": "Pelo Socialismo na Europa"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/pajetta/1990/mes/90.pdf",
-                "titulo": "As moções são três, o Partido somente um "
             }
         ]
     },
@@ -18823,10 +18187,6 @@
             {
                 "url": "https://www.marxists.org/portugues/pannekoe/ano/luta/index.htm",
                 "titulo": "A Luta Operária"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/pannekoe/ano/mes/92.pdf",
-                "titulo": "Partidos, Sindicatos e Conselhos Operários"
             }
         ]
     },
@@ -18912,19 +18272,6 @@
             {
                 "url": "https://www.marxists.org/portugues/pecheux/1971/mes/semantica.htm",
                 "titulo": "A Semântica e o Corte Saussuriano: Língua, Linguagem, Discurso"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/pecheux/ano/mes/41.pdf",
-                "titulo": "Sobre os contextos epistemológicos da análise de discurso"
-            }
-        ]
-    },
-    "Pelloutier, Fernand": {
-        "url": "https://www.marxists.org/portugues/pelloutier/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/pelloutier/ano/mes/40.pdf",
-                "titulo": "A conquista do poder político"
             }
         ]
     },
@@ -18995,10 +18342,6 @@
             {
                 "url": "https://www.marxists.org/portugues/astrojildo/1958/12/machado.htm",
                 "titulo": "Pensamento Dialético e Materialista de Machado de Assis"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/astrojildo/ano/mes/90.pdf",
-                "titulo": "Intervenção de Astrojildo Pereira "
             }
         ]
     },
@@ -19036,15 +18379,6 @@
             }
         ]
     },
-    "Petrichenko, Stepan": {
-        "url": "https://www.marxists.org/portugues/petrichenko/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/petrichenko/../goldman/ano/mes/kronstadt.pdf",
-                "titulo": "A verdade sobre Kronstadt"
-            }
-        ]
-    },
     "Pfemfert, Franz": {
         "url": "https://www.marxists.org/portugues/pfemfert/index.htm",
         "textos": [
@@ -19063,7 +18397,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/piatnitsky/1930/mes/forjar.htm",
-                "titulo": ""
+                "titulo": "Como Forjar um Partido Bolchevique"
             }
         ]
     },
@@ -19209,19 +18543,6 @@
             {
                 "url": "https://www.marxists.org/portugues/postone/1998/12/31.htm",
                 "titulo": "Desconstrução como crítica social"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/postone/2019/01/28.pdf",
-                "titulo": "Atrás de nós: Moishe Postone e o ensino de teoria social"
-            }
-        ]
-    },
-    "Pouget, Emile": {
-        "url": "https://www.marxists.org/portugues/pouget/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/pouget/1904/mes/40.pdf",
-                "titulo": "A Ação Direta"
             }
         ]
     },
@@ -19231,19 +18552,6 @@
             {
                 "url": "https://www.marxists.org/portugues/poulantzas/1967/09/90.htm",
                 "titulo": "Breves notas sobre o objeto de “O capital”"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/poulantzas/ano/mes/40.pdf",
-                "titulo": "As classes sociais"
-            }
-        ]
-    },
-    "Preobrazhensky, Evgeni": {
-        "url": "https://www.marxists.org/portugues/preobrazhensky/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/preobrazhensky/1923/10/15.pdf",
-                "titulo": "Manifesto dos 46"
             }
         ]
     },
@@ -19364,7 +18672,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/prestes/1946/06/17.htm",
-                "titulo": ""
+                "titulo": "A Reforma Agr&aacute;ria"
             },
             {
                 "url": "https://www.marxists.org/portugues/prestes/1946/07/povo.htm",
@@ -19372,7 +18680,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/prestes/1946/11/07.htm",
-                "titulo": ""
+                "titulo": "Voto de Congratula&ccedil;&otilde;es pelo 29&ordm; Anivers&aacute;rio da Revolu&ccedil;&atilde;o Sovi&eacute;tica"
             },
             {
                 "url": "https://www.marxists.org/portugues/prestes/1946/11/11.htm",
@@ -19388,7 +18696,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/prestes/1947/democracia/index.htm",
-                "titulo": ""
+                "titulo": "Problemas Atuais da Democracia"
             },
             {
                 "url": "https://www.marxists.org/portugues/prestes/1947/09/eleicoes.htm",
@@ -19408,7 +18716,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/prestes/1949/08/congresso.htm",
-                "titulo": ""
+                "titulo": "Congresso Continental Americano pela Paz &mdash; Golpe Decisivo Contra os Planos Estrat&eacute;gicos dos Incendi&aacute;rios de Guerra"
             },
             {
                 "url": "https://www.marxists.org/portugues/prestes/1949/12/politica.htm",
@@ -19416,7 +18724,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/prestes/../tematica/rev_prob/26/politica.htm",
-                "titulo": ""
+                "titulo": "Mais Vigor e Aud&aacute;cia nas Lutas de Massas Pelo 1.&deg; de Maio, Pela Interdi&ccedil;&atilde;o da Bomba At&ocirc;mica, Pela Paz e a Independ&ecirc;ncia Nacional"
             },
             {
                 "url": "https://www.marxists.org/portugues/prestes/1950/08/01.htm",
@@ -19440,7 +18748,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/prestes/1951/10/politica.htm",
-                "titulo": ""
+                "titulo": "Nossa Pol&iacute;tica: Intensificar a Luta Pela Paz"
             },
             {
                 "url": "https://www.marxists.org/portugues/prestes/1951/12/politica.htm",
@@ -19460,7 +18768,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/prestes/1953/03/congresso.htm",
-                "titulo": ""
+                "titulo": "O XIX Congresso do Partido Comunista da Uni&atilde;o Sovi&eacute;tica e as Tarefas de Nosso Partido"
             },
             {
                 "url": "https://www.marxists.org/portugues/prestes/1953/03/mensagem.htm",
@@ -19496,7 +18804,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/prestes/1954/informe/index.htm",
-                "titulo": ""
+                "titulo": "IV Congresso do Partido Comunista do Brasil - PCB"
             },
             {
                 "url": "https://www.marxists.org/portugues/prestes/1955/07/politica.htm",
@@ -19532,7 +18840,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/prestes/1975/07/declara.htm",
-                "titulo": ""
+                "titulo": "Declara&ccedil;&atilde;o do Partido Comunista Brasileiro"
             },
             {
                 "url": "https://www.marxists.org/portugues/prestes/1979/11/08.htm",
@@ -19603,10 +18911,6 @@
             {
                 "url": "https://www.marxists.org/portugues/proudhon/1851/mes/90.htm",
                 "titulo": "Justiça, Administração, Polícia"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/proudhon/ano/mes/91.pdf",
-                "titulo": "Teoria da propriedade "
             }
         ]
     },
@@ -19625,19 +18929,6 @@
             {
                 "url": "https://www.marxists.org/portugues/queiroz/1958/mes/gabriela.htm",
                 "titulo": "Gabriela e os Coronéis do Cacau"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/queiroz/ano/mes/40.pdf",
-                "titulo": "Fourier e o Brasil"
-            }
-        ]
-    },
-    "Quijano, Anibal": {
-        "url": "https://www.marxists.org/portugues/quijano/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/quijano/2005/12/40.pdf",
-                "titulo": "Dom Quixote e os moinhos de vento na América Latina"
             }
         ]
     },
@@ -19733,10 +19024,6 @@
             {
                 "url": "https://www.marxists.org/portugues/graciliano/../tematica/livros/prestes/04.htm",
                 "titulo": "Prestes"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/graciliano/1945/08/15.pdf",
-                "titulo": "O atentado contra o escritor Wladimir Guimarães"
             }
         ]
     },
@@ -19749,7 +19036,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/ramos/1985/02/privatizacoes.htm",
-                "titulo": ""
+                "titulo": "Contra as Privatiza&ccedil;&otilde;es, o Monetarismo e a Economia de Mercado"
             }
         ]
     },
@@ -19785,10 +19072,6 @@
             {
                 "url": "https://www.marxists.org/portugues/rates/1923/07/15.htm",
                 "titulo": "Sejamos marxistas"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/rates/1944/08/07.pdf",
-                "titulo": "Carta a Pinto Quartim"
             }
         ]
     },
@@ -19801,15 +19084,6 @@
             }
         ]
     },
-    "Reclus, Élisée ": {
-        "url": "https://www.marxists.org/portugues/reclus/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/reclus/ano/mes/40.pdf",
-                "titulo": "A Anarquia e a Igreja"
-            }
-        ]
-    },
     "Reed, John": {
         "url": "https://www.marxists.org/portugues/reed/index.htm",
         "textos": [
@@ -19819,11 +19093,11 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/reed/1918/10/estrutura.htm",
-                "titulo": ""
+                "titulo": "A Estrutura do Sistema Sovi&eacute;tico"
             },
             {
                 "url": "https://www.marxists.org/portugues/reed/1919/dias/index.htm",
-                "titulo": ""
+                "titulo": "Dez Dias que Abalaram o Mundo"
             }
         ]
     },
@@ -19874,15 +19148,6 @@
             }
         ]
     },
-    "Rezk, Antonio": {
-        "url": "https://www.marxists.org/portugues/rezk/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/rezk/2002/mes/40.pdf",
-                "titulo": "Moniz Bandeira e o governo João Goulart"
-            }
-        ]
-    },
     "Riazanov, David": {
         "url": "https://www.marxists.org/portugues/riazanov/index.htm",
         "textos": [
@@ -19904,15 +19169,6 @@
             }
         ]
     },
-    "Ricardo, David": {
-        "url": "https://www.marxists.org/portugues/ricardo/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/ricardo/1817/04/19.pdf",
-                "titulo": "Princípios de Economia Política e de Tributação"
-            }
-        ]
-    },
     "Rocker, Rudolf": {
         "url": "https://www.marxists.org/portugues/rocker/index.htm",
         "textos": [
@@ -19923,10 +19179,6 @@
             {
                 "url": "https://www.marxists.org/portugues/rocker/1920/mes/90.htm",
                 "titulo": "Anarquismo e Organização"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/rocker/ano/mes/90.pdf",
-                "titulo": "Porque sou anarquista"
             }
         ]
     },
@@ -19952,10 +19204,6 @@
             {
                 "url": "https://www.marxists.org/portugues/rodney/ano/mes/40.htm",
                 "titulo": "Sobre democracia: Lênin, Kautsky e Luxemburgo"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/rodney/ano/mes/41.pdf",
-                "titulo": "Walter Rodney: intelectual socialista e historiador da África"
             }
         ]
     },
@@ -23643,25 +22891,7 @@
         "textos": [
             {
                 "url": "https://www.marxists.org/portugues/romeu/1976/08/20.htm",
-                "titulo": ""
-            }
-        ]
-    },
-    "Rosdolsky, Roman": {
-        "url": "https://www.marxists.org/portugues/rosdolsky/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/rosdolsky/ano/mes/esquemas.pdf",
-                "titulo": "A Polêmica em Torno dos Esquemas da Reprodução de Marx "
-            }
-        ]
-    },
-    "Rubel, Maximilien": {
-        "url": "https://www.marxists.org/portugues/rubel/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/rubel/ano/mes/40.pdf",
-                "titulo": "Reflexões sobre a Utopia e a Revolução"
+                "titulo": "A Luta Nacional nos Países Catalães"
             }
         ]
     },
@@ -23679,10 +22909,6 @@
             {
                 "url": "https://www.marxists.org/portugues/rubinstein/1959/mes/40.htm",
                 "titulo": "“Materialismo e Empiriocriticismo” de V.I. Lênin e a Teoria do Reflexo"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/rubinstein/ano/mes/40.pdf",
-                "titulo": "Quem foi Serguei Leonidovich Rubinstein? Uma breve biografia de um erudito da Psicologia"
             }
         ]
     },
@@ -23712,10 +22938,6 @@
             {
                 "url": "https://www.marxists.org/portugues/ruhle/1939/09/fascismo.htm",
                 "titulo": "A Luta Contra o Fascismo Começa Pela Luta Contra o  Bolchevismo"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/ruhle/1940/mes/90.pdf",
-                "titulo": "Qual posição tomar?"
             }
         ]
     },
@@ -24148,10 +23370,6 @@
             {
                 "url": "https://www.marxists.org/portugues/sachs/1983/mes/pt.htm",
                 "titulo": "O PT e o Partido Revolucionário"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/sachs/ano/mes/militante-rev-entre-Europa-Brasil.pdf",
-                "titulo": "Érico Sachs/Ernesto Martins - Um militante revolucionário entre a Europa e o Brasil"
             }
         ]
     },
@@ -24206,10 +23424,6 @@
             {
                 "url": "https://www.marxists.org/portugues/saffioti/1995/03/29.htm",
                 "titulo": "A Exploração Sexual de Meninas e Adolescentes: Aspectos Históricos e Conceituais"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/saffioti/ano/mes/41.pdf",
-                "titulo": "Violência estrutural e de gênero – Mulher gosta de apanhar?"
             }
         ]
     },
@@ -24273,10 +23487,6 @@
             {
                 "url": "https://www.marxists.org/portugues/santos-theotonio/ano/mes/90.htm",
                 "titulo": "A Teoria da Dependência: balanços e perspectivas Capítulo II – A teoria da dependência: um balanço"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/santos-theotonio/../bambirra/1981/mes/41.pdf",
-                "titulo": "La estrategia y la táctica socialistas de Marx y Engels a Lenin"
             }
         ]
     },
@@ -24363,25 +23573,12 @@
             }
         ]
     },
-    "Schaff, Adam": {
-        "url": "https://www.marxists.org/portugues/schaff/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/schaff/ano/mes/40.pdf",
-                "titulo": "O marxismo e a filosofia do homem"
-            }
-        ]
-    },
     "Schapiro, Alexander": {
         "url": "https://www.marxists.org/portugues/schapiro/index.htm",
         "textos": [
             {
                 "url": "https://www.marxists.org/portugues/schapiro/../tematica/rev_prob/17/expansao.htm",
                 "titulo": "A Expansão Econômica do Imperialismo Americano na Europa Ocidental"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/schapiro/ano/mes/90.pdf",
-                "titulo": "As três Internacionais Sindicais"
             }
         ]
     },
@@ -24416,7 +23613,7 @@
         "textos": [
             {
                 "url": "https://www.marxists.org/portugues/serge/1926/repressao_ga/index.htm",
-                "titulo": ""
+                "titulo": "O Que Todo Revolucion&aacute;rio Deve Saber Sobre a Repressom"
             },
             {
                 "url": "https://www.marxists.org/portugues/serge/1937/mes/personalidade-ga.htm",
@@ -24424,16 +23621,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/serge/1938/mes/moral.htm",
-                "titulo": ""
-            }
-        ]
-    },
-    "Sertório, Manuel": {
-        "url": "https://www.marxists.org/portugues/sertorio/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/sertorio/1973/02/40.pdf",
-                "titulo": "A Arma da Crítica - Comunicação ao 3.º Congresso de oposição democrática"
+                "titulo": "Apresenta&ccedil;&atilde;o do Panfleto: &quot;A Moral Deles e a Nossa&quot;"
             }
         ]
     },
@@ -24481,25 +23669,12 @@
             }
         ]
     },
-    "Smith, Adam": {
-        "url": "https://www.marxists.org/portugues/smith/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/smith/1776/03/41.pdf",
-                "titulo": "Riqueza das Nações - vol. II"
-            }
-        ]
-    },
     "Soares, Pedro": {
         "url": "https://www.marxists.org/portugues/soares/index.htm",
         "textos": [
             {
                 "url": "https://www.marxists.org/portugues/soares/1966/09/bento.htm",
                 "titulo": "Bento Gonçalves Organizador do Partido"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/soares/1970/09/07.pdf",
-                "titulo": "Uma tentativa de diversão e de divisão contra o movimento anti-fascista e anti-colonialista português"
             }
         ]
     },
@@ -25630,24 +24805,6 @@
             }
         ]
     },
-    "Struik, Dirk Jan": {
-        "url": "https://www.marxists.org/portugues/struik/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/struik/1948/mes/40.pdf",
-                "titulo": "Marx e a Matemática"
-            }
-        ]
-    },
-    "Suchodolski, Bogdan": {
-        "url": "https://www.marxists.org/portugues/suchodolski/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/suchodolski/ano/mes/40.pdf",
-                "titulo": "Teoria marxista da educação"
-            }
-        ]
-    },
     "Sultan-Galiev, Mirsaid K.": {
         "url": "https://www.marxists.org/portugues/sultan-galiev/index.htm",
         "textos": [
@@ -25738,15 +24895,6 @@
             }
         ]
     },
-    "Tchakhotine, Sergei Stepanovich": {
-        "url": "https://www.marxists.org/portugues/tchakhotine/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/tchakhotine/1939/massas/40.pdf",
-                "titulo": "A Violação das Massas pela Propaganda Política"
-            }
-        ]
-    },
     "Thalheimer, August": {
         "url": "https://www.marxists.org/portugues/thalheimer/index.htm",
         "textos": [
@@ -25801,10 +24949,6 @@
             {
                 "url": "https://www.marxists.org/portugues/thalheimer/ano/mes/fascismo.htm",
                 "titulo": "Sobre o Fascismo"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/thalheimer/ano/mes/90.pdf",
-                "titulo": "A Lenda do Outubro Alemão e outros escritos"
             }
         ]
     },
@@ -25872,7 +25016,7 @@
             },
             {
                 "url": "https://www.marxists.org/portugues/togliatti/ano/mes/gramsci_25.htm",
-                "titulo": ""
+                "titulo": "Ant&ocirc;nio Gramsci, Chefe da Classe Oper&aacute;ria Italiana"
             }
         ]
     },
@@ -25903,19 +25047,6 @@
             {
                 "url": "https://www.marxists.org/portugues/tragtenberg/1991/mes/40.htm",
                 "titulo": "Rosa Luxemburgo e a crítica aos fenômenos burocráticos"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/tragtenberg/ano/mes/40.pdf",
-                "titulo": "Marx/Bakunin"
-            }
-        ]
-    },
-    "Tristan, Flora": {
-        "url": "https://www.marxists.org/portugues/tristan/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/tristan/1844/mes/40.pdf",
-                "titulo": "União Operária"
             }
         ]
     },
@@ -26505,15 +25636,6 @@
             }
         ]
     },
-    "Trường Chinh": {
-        "url": "https://www.marxists.org/portugues/truong-chinh/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/truong-chinh/1947/mes/40.pdf",
-                "titulo": "A resistência vencerá"
-            }
-        ]
-    },
     "Varga, Eugéne": {
         "url": "https://www.marxists.org/portugues/varga/index.htm",
         "textos": [
@@ -26809,37 +25931,6 @@
             {
                 "url": "https://www.marxists.org/portugues/vasco/1920/08/03.htm",
                 "titulo": "Como surge a luta de classes: As tendências da organização operária para o corporativismo e para a colaboração de classes"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/vasco/1923/mes/91.pdf",
-                "titulo": "Greve de Inquilinos"
-            }
-        ]
-    },
-    "Vázquez, Adolfo Sánchez": {
-        "url": "https://www.marxists.org/portugues/vazquez/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/vazquez/2007/mes/40.pdf",
-                "titulo": "Ética e marxismo"
-            }
-        ]
-    },
-    "Vieira, Alexandre Fernandes": {
-        "url": "https://www.marxists.org/portugues/vieira/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/vieira/1959/mes/90.pdf",
-                "titulo": "Figuras gradas do movimento social português"
-            }
-        ]
-    },
-    "Volin, Vsevolod": {
-        "url": "https://www.marxists.org/portugues/volin/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/volin/1947/mes/41.pdf",
-                "titulo": "Guerra e revolução"
             }
         ]
     },
@@ -26914,10 +26005,6 @@
             {
                 "url": "https://www.marxists.org/portugues/wallon/1942/mes/psicologia.htm",
                 "titulo": "Psicologia e Materialismo Dialético"
-            },
-            {
-                "url": "https://www.marxists.org/portugues/wallon/ano/mes/90.pdf",
-                "titulo": "Coleção Educadores (excertos de A evolução psicológica da criança)"
             }
         ]
     },
@@ -27004,15 +26091,6 @@
             {
                 "url": "https://www.marxists.org/portugues/wright/1954/mes/40.htm",
                 "titulo": "Socialismo na Iugoslávia? O caso de Djilas e o regime de Tito"
-            }
-        ]
-    },
-    "Yakovlev, Nikolai Nikoláievitch": {
-        "url": "https://www.marxists.org/portugues/yakovlev/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/yakovlev/1979/mes/40.pdf",
-                "titulo": "A CIA contra a URSS"
             }
         ]
     },
@@ -27118,15 +26196,6 @@
             {
                 "url": "https://www.marxists.org/portugues/zhdanov/ano/mes/papel.htm",
                 "titulo": "O Papel Social da Arte Progressista"
-            }
-        ]
-    },
-    "Zinoviev, Aleksandr Aleksándrovitch": {
-        "url": "https://www.marxists.org/portugues/zinoviev-alexandr/index.htm",
-        "textos": [
-            {
-                "url": "https://www.marxists.org/portugues/zinoviev-alexandr/2003/05/29.pdf",
-                "titulo": "Stáline, a época de Stáline e o stalinismo"
             }
         ]
     },

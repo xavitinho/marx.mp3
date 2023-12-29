@@ -69,7 +69,7 @@ function showtxts(autor) {
 
 
 let txttoread = JSON.parse(localStorage.getItem('txts'))
-if(!txttoread) txttoread = {}
+if (!txttoread) txttoread = {}
 atualizafavoritos()
 
 async function requestserver(autor, titulo, url) {
@@ -89,7 +89,7 @@ async function requestserver(autor, titulo, url) {
             let xurl = 'https://servermarxmp3.xaax.repl.co/?url=' + url
             txttoread[autor][titulo] = { progresso: 0, url, texto: [] }
             if (!url.includes('.pdf')) {
-                let response = await fetch(xurl).catch( e => {
+                let response = await fetch(xurl).catch(e => {
                     erro.innerText = 'houve um erro, tente novamente'
                     return;
                 })
@@ -97,21 +97,23 @@ async function requestserver(autor, titulo, url) {
                 let e = document.createElement('div')
                 e.innerHTML = txt
                 if (!txt.erro) {
-                    if(txt.includes('class="toc"')) {
+                    if (txt.includes('class="toc"')) {
                         txt = ''
                         let paragrafos = e.children
                         let cont = 0
                         let total = paragrafos.length
                         for (let par of paragrafos) {
-                            if(par.className == 'toc' && par.children[0].getAttribute("href")) {
+                            if (par.className == 'toc' && par.children[0].getAttribute("href")) {
                                 let capurl = url.replace('index.htm', par.children[0].getAttribute("href"))
-                                let response1 = await fetch('https://servermarxmp3.xaax.repl.co/?url=' + capurl).catch( e=> {
-                                    erro.innerText = 'houve um erro, tente novamente'
-                                    return;
-                                })
-                                let txt1 = await response1.json()
-                                if(!txt1.erro)  txt += txt1
-                                else element.innerText = txt1.erro
+                                if (!capurl.includes('.pdf')) {
+                                    let response1 = await fetch('https://servermarxmp3.xaax.repl.co/?url=' + capurl).catch(e => {
+                                        erro.innerText = 'houve um erro, tente novamente'
+                                        return;
+                                    })
+                                    let txt1 = await response1.json()
+                                    if (!txt1.erro) txt += txt1
+                                    else element.innerText = txt1.erro
+                                }
                             }
                             cont++
                             leitor.innerText = `${cont}/${total}...`
@@ -143,7 +145,7 @@ async function requestserver(autor, titulo, url) {
     } else {
         erro.innerText = ''
     }
-    if(erro.innerText.length == 0) {
+    if (erro.innerText.length == 0) {
         txttoread[autor][titulo].texto.forEach(p => {
             element.innerHTML += `<p>${p}</p>`
         })
@@ -192,9 +194,9 @@ function pause() {
 
 function limpar(autor, titulo) {
     let button = document.getElementById('buttonclear')
-    if(autor && titulo) {
+    if (autor && titulo) {
         txttoread[autor][titulo] = undefined
-    } else if(button.className != 'disabled') {
+    } else if (button.className != 'disabled') {
         const { autor, titulo } = button.dataset
         txttoread[autor][titulo].progresso = 0
         window.speechSynthesis.cancel()
@@ -239,7 +241,7 @@ function showfavoritos() {
 }
 
 function atualizafavoritos() {
-    localStorage.setItem('txts', JSON.stringify({}))
+    localStorage.setItem('txts', JSON.stringify(txttoread))
     let menu = document.getElementById('menufavoritos')
     menu.innerHTML = ''
     Object.keys(txttoread).forEach(autor => {
