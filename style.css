@@ -1,3 +1,8 @@
+body {
+    background-color: #333;
+    color: #fff;
+}
+
 .invisible {
     display: none;
 }
@@ -6,18 +11,21 @@ div {
     margin-bottom: 20px;
 }
 
-body {
-    display: flex;
-}
 
 @media(max-width: 699px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
     .coluna {
-        width: 100%;
-        height: 50%;
+        height: 40vh;
     }
 }
 
 @media(min-width: 700px) {
+    body {
+        display: flex;
+    }
     .coluna {
         width: 50%;
         height: 90vh;
@@ -25,20 +33,15 @@ body {
 }
 
 .coluna {
-    border: solid 1px #000;
+    border: solid 1px #fff;
     padding: 20px;
     display: flex;
     flex-direction: column;
 }
 
-
-#opcoes {
-    width: 50%;
-}
-
 #leitor, #menumenu {
     overflow-y: scroll;
-    border: solid 1px #aaa;
+    border: solid 1px #6e6e6e;
 }
 
 #leitor {
@@ -61,21 +64,33 @@ button:hover:not(.disabled) {
     font-weight: bold;
 }
 
-#favoritostitulo {
-    border: solid 1px #000;
+#favoritostitulo, #voiceSelect {
+    background-color: #444;
+    border: solid 1px #aaa;
     display: flex;
     justify-content: space-between;
     padding: 0 10px 0 10px;
     margin: 0;
+    color: #ccc;
 }
 
 #favoritos {
+    background-color: #444;
     position: absolute;
-    background-color: #fff;
     border: solid 1px #ccc;
     z-index: 1;
     width: 100%;
-    box-shadow: 0 10px 10px #aaa;
+    box-shadow: 0 10px 10px #00000099;
+    color: #ccc;
+}
+
+#favoritos div {
+    margin: 0;
+    padding: 10px 10px 10px 10px
+}
+
+#favoritos div:hover {
+    background-color: #222;
 }
 
 #voiceSelect {
@@ -84,13 +99,18 @@ button:hover:not(.disabled) {
 
 favoritos {
     position: relative;
-        display: inline-block;
-        width:100%;
+    display: inline-block;
+    width:100%;
 }
 
 .botoes {
     background-color: #ccc;
     height: 100px;
-    padding: 20px
+    padding: 20px;
+    color: #000;
+}
+
+#menufavoritos {
+    padding: 0;
 }
 

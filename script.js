@@ -220,7 +220,7 @@ function atualizafavoritos() {
     menu.innerHTML = ''
     Object.keys(txttoread).forEach(autor => {
         let visible = false
-        let e = document.createElement('li')
+        let e = document.createElement('div')
         let html = `<a class="autorfavoritos">${autor}</a><ul>`
         Object.keys(txttoread[autor]).forEach(texto => {
             if (txttoread[autor][texto] && txttoread[autor][texto].progresso > 0) {
@@ -228,7 +228,7 @@ function atualizafavoritos() {
                 html += `<li><a style="font-weight: bold;" onclick=${inferno}requestserver(\`${autor}\`, \`${texto}\`)${inferno}>
                         ${texto} (${txttoread[autor][texto].progresso}/${txttoread[autor][texto].texto.length} )
                         </a><br>
-                        <a style="color: #f00; font-size: .8em; font-weight: bold;" 
+                        <a style="color: #f66; font-size: .8em; font-weight: bold;" 
                         onclick=${inferno}limpar(\`${autor}\`, \`${texto}\`)${inferno}>× remover da memória </a></li>`
                 visible = true
             }
