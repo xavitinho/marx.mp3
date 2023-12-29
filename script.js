@@ -160,7 +160,7 @@ async function requestserver(autor, titulo, url) {
         txttoread[autor][titulo] = undefined
     }
     document.body.style.cursor = 'auto'
-    document.getElementById('txturl').innerHTML = `fonte: <a href="${txttoread[autor][titulo].url}" style="color:#f00">${txttoread[autor][titulo].url}</a>`
+    document.getElementById('txturl').innerHTML = `fonte: <a href="${txttoread[autor][titulo].url}" style="color:#f66; font-weight: bold;">${txttoread[autor][titulo].url}</a>`
     atualizafavoritos()
 }
 

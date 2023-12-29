@@ -2,15 +2,34 @@
     box-sizing: border-box;
 }
 
+div:not(#opcoes), select {
+    border-radius: 5px;
+}
+
 body {
     background-color: #333;
     color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #aaa;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: #fff;
+    overflow: hidden;
+    border-radius: 5px;
 }
 
 body, html {
     height: 100%;
     width: 100%;
     margin: 0;
+}
+
+select {
+    font-size: .8em;    
 }
 
 .invisible {
@@ -109,7 +128,7 @@ button:hover:not(.disabled) {
 
 #favoritos div {
     margin: 0;
-    padding: 10px 10px 10px 10px
+    padding: 5px;
 }
 
 #favoritos div:hover {
