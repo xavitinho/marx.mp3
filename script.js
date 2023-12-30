@@ -1,4 +1,4 @@
-if(window.location.href.startsWith('http://127.0.0.1:5500')) window.location.replace("https://marxistmp3.web.app")
+if(window.location.href.startsWith('https://xavitinho.github.io/marx.mp3')) window.location.replace("https://marxistmp3.web.app")
 
 var voices;
 populateVoiceList()
