@@ -10,11 +10,11 @@ atualizafavoritos()
 var tocando = { autor: false, titulo: false, rate: 1 }
 
 const rate = document.querySelector("#rate");
-rate.addEventListener("change", e => { 
+rate.addEventListener("change", e => {
     tocando.rate = e.target.value
-    if(window.speechSynthesis.speaking) {
+    if (window.speechSynthesis.speaking) {
         window.speechSynthesis.cancel()
-        if( tocando.titulo ) speak()
+        if (tocando.titulo) speak()
     }
 })
 
@@ -103,6 +103,8 @@ async function requestserver(autor, titulo, url) {
     let button = document.getElementById('buttonplay')
     let leitor = document.getElementById('leitor')
     let erro = document.getElementById('errotxt')
+    button.dataset.autor = 'none'
+    button.dataset.titulo = 'none'
     document.getElementById('txturl').innerHTML = ''
     leitor.innerHTML = ''
     erro.innerText = 'carregando...'
@@ -116,35 +118,40 @@ async function requestserver(autor, titulo, url) {
             txttoread[autor][titulo] = { progresso: 0, url, texto: [''] }
             if (!url.includes('.pdf')) {
                 let response = await fetch(xurl).catch(e => {
+                    console.log(e)
                     erro.innerText = 'houve um erro, tente novamente'
-                    return;
+                    return
                 })
                 let txt = await response.json()
                 if (!txt.erro) {
                     if (txt.includes('class="toc"')) {
                         let e = document.createElement('div')
                         e.innerHTML = txt
-                        let paragrafos = e.children
+                        let paragrafos = Array.from(e.children)
                         let cont = 0
-                        let total = paragrafos.length
+                        let total = 0
                         txt = ''
-                        for (let par of paragrafos) {
-                            if (par.className.includes('toc')) {
-                                if (par.children.length > 0) {
-                                    if (par.children[0].getAttribute("href")) {
-                                        let capurl = url.replace('index.htm', par.children[0].getAttribute("href"))
-                                        if (!capurl.includes('.pdf')) {
-                                            let response1 = await fetch('https://servermarxmp3.xaax.repl.co/?url=' + capurl).catch(e => {
-                                                erro.innerText = 'houve um erro, tente novamente'
-                                                return;
-                                            })
-                                            let txt1 = await response1.json()
-                                            if (!txt1.erro) txttoread[autor][titulo].texto = await createtxt(txttoread[autor][titulo].texto, txt1)
-                                            else leitor.innerText = txt1.erro
-                                        }
-                                    }
-                                }
-                            }
+                        let capurls = paragrafos.filter(p => {
+                            return (
+                                p.className.includes('toc') &&
+                                p.children.length > 0 &&
+                                p.children[0].getAttribute("href") &&
+                                !p.children[0].getAttribute("href").includes('#') &&
+                                !p.children[0].getAttribute("href").includes('.pdf')
+                            )
+                        }).map(p => {
+                            total++
+                            return (url.replace('index.htm', p.children[0].getAttribute("href")))
+                        })
+                        for (let capurl of capurls) {
+                            let response1 = await fetch('https://servermarxmp3.xaax.repl.co/?url=' + capurl).catch(e => {
+                                console.log(e)
+                                erro.innerText = 'houve um erro, tente novamente'
+                                return
+                            })
+                            let txt1 = await response1.json()
+                            if (!txt1.erro) txttoread[autor][titulo].texto = await createtxt(txttoread[autor][titulo].texto, txt1)
+                            else leitor.innerText = txt1.erro
                             cont++
                             leitor.innerText = `${cont}/${total}...`
                         }
@@ -177,12 +184,12 @@ async function requestserver(autor, titulo, url) {
 }
 
 function play() {
-    window.speechSynthesis.cancel()
     let erro = document.getElementById('erroplay')
     let button = document.getElementById('buttonplay')
     let { autor, titulo } = button.dataset
     if (titulo == 'none') erro.innerText = 'nenhum texto selecionado'
     else {
+        window.speechSynthesis.cancel()
         tocando = { autor, titulo, rate: tocando.rate }
         erro.innerHTML = `tocando <strong>${titulo}</strong> de ${autor}`
         let buttonpause = document.getElementById('buttonpause')
@@ -206,22 +213,8 @@ function pause() {
     }
 }
 
-function limpar(origem) {
-    const { autor, titulo, rate } = tocando
-    if(!origem ||  document.getElementById('buttonclear').className != 'disabled') {
-        txttoread[autor][titulo] = undefined
-        window.speechSynthesis.cancel()
-        document.getElementById('progresso').innerText = ''
-        document.getElementById('buttonclear').className = 'disabled'
-        document.getElementById('buttonpause').className = 'disabled'
-        document.getElementById('erroplay').innerText = ''
-        tocando = { autor: false, titulo: false, rate }
-    }
-    atualizafavoritos()
-}
-
 function speak() {
-    const {autor, titulo, rate} = tocando
+    const { autor, titulo, rate } = tocando
     let progresso = txttoread[autor][titulo].progresso
     let total = txttoread[autor][titulo].texto.length
     document.getElementById('progresso').innerHTML = `<strong>${(progresso / total * 100).toFixed(2)}%</strong> :   ${progresso}/${total} parágrafos ouvidos`
@@ -268,7 +261,7 @@ function atualizafavoritos() {
                         ${texto} (${txttoread[autor][texto].progresso}/${txttoread[autor][texto].texto.length} )
                         </a><br>
                         <a style="color: #f66; font-size: .8em; font-weight: bold;" 
-                        onclick=${inferno}limpar(\`${autor}\`, \`${texto}\`)${inferno}>× remover da memória </a></li>`
+                        onclick=${inferno}liberarmemoria(\`${autor}\`, \`${texto}\`)${inferno}>× remover da memória </a></li>`
                 visible = true
             }
         })
@@ -278,3 +271,24 @@ function atualizafavoritos() {
     })
 }
 
+function liberarmemoria(autor, titulo) {
+    if (tocando.autor == autor && tocando.titulo == titulo) {
+        limpar()
+    }
+    txttoread[autor][titulo] = undefined
+    atualizafavoritos()
+}
+
+function limpar(origem) {
+    var { autor, titulo, rate } = tocando
+    if (autor && titulo) {
+        txttoread[autor][titulo].progresso = 0
+        window.speechSynthesis.cancel()
+        document.getElementById('progresso').innerText = ''
+        document.getElementById('buttonclear').className = 'disabled'
+        document.getElementById('buttonpause').className = 'disabled'
+        document.getElementById('erroplay').innerText = ''
+        tocando = { autor: false, titulo: false, rate }
+        atualizafavoritos()
+    }
+}
