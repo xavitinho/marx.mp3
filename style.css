@@ -9,8 +9,10 @@ div:not(#opcoes), select {
 body {
     background-color: #333;
     color: #fff;
-    font-family: 'Open sans light', sans-serif;
+    font-family: 'Open sans light', Arial, sans-serif;
 }
+
+
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -99,6 +101,11 @@ select {
 
 .disabled:hover {
     cursor: not-allowed;
+}
+
+button {
+    font-family: 'Open sans light', Arial, sans-serif;
+    font-weight: bold;
 }
 
 .menu a:hover:not(.autorfavoritos),

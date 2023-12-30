@@ -13,27 +13,65 @@
   <container>
     <div class="coluna" id="opcoes">
       <favoritos>
-        <div id="favoritostitulo" onclick="showfavoritos()"> <span>textos em progresso</span>
-          <seta>▼</seta>
+        <div id="favoritostitulo" onclick="showfavoritos()">
+          <span>
+            textos em progresso
+          </span>
+          <seta>
+            ▼
+          </seta>
         </div>
         <div id="favoritos" style="display: none;">
-          <ul id="menufavoritos" class="menu"></ul>
+          <ul id="menufavoritos" class="menu">
+          </ul>
         </div>
       </favoritos>
-      <div><select id="voiceSelect"></select></div>
-      <div>pesquise por um autor ou texto aqui: <input class="search" id="search" type="text"></div>
+      <div>
+        <select id="voiceSelect">
+
+        </select>
+      </div>
+      <div>pesquise por um autor ou texto aqui:
+        <input class="search" id="search" type="text">
+      </div>
       clique em um autor para ver seus textos:
       <div id="menumenu" style="margin: 0;">
-       <ul id="menu" class="menu"></ul>
+        <ul id="menu" class="menu">
+
+        </ul>
       </div>
-      <div style="margin: 0; padding: 0;">todos os textos foram expropriados do site <a href="https://www.marxists.org/portugues/index.htm" style="color:#f66; font-weight: bold;">marxists.org</a> </div>
+      <div style="margin: 0; padding: 0;">todos os textos foram expropriados do site
+        <a href="https://www.marxists.org/portugues/index.htm" style="color:#f66; font-weight: bold;">
+          marxists.org
+        </a>
+      </div>
     </div>
     <div class="coluna" id="right">
-      <div>seu progresso será salvo automaticamente.</div>
+      <div>
+        seu progresso será salvo automaticamente.
+      </div>
       <div class="botoes">
-        <div><button onclick="play()" id="buttonplay" data-autor="none" data-titulo="none">tocar</button>
-          <button class="disabled" onclick="pause()" id="buttonpause">continuar</button>
-          <button class="disabled" onclick="limpar()" id="buttonclear" data-autor="none" data-titulo="none">parar e limpar progresso</button></div>
+        <div>
+          <button onclick="play()" id="buttonplay" data-autor="none" data-titulo="none">
+            tocar
+          </button>
+          <button class="disabled" onclick="pause()" id="buttonpause">
+            continuar
+          </button>
+          <button class="disabled" onclick="limpar(true)" id="buttonclear">
+            parar e limpar progresso
+          </button>
+          <div style="display: inline-block; font-size: .9em; font-weight: bold;"> 
+            velocidade:
+            <select name="velocidade" id="rate">
+              <option value="0.5">0,5x</option>
+              <option value="1" selected>1x</option>
+              <option value="2.5">2,5x</option>
+              <option value="5">5x</option>
+              <option value="10">10x</option>
+            </select>
+          </div>
+        </div>
         <div id="progresso"></div>
         <p id="erroplay"></p>
       </div>

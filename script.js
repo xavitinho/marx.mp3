@@ -1,4 +1,22 @@
 var voices;
+populateVoiceList()
+if (typeof speechSynthesis !== "undefined" && speechSynthesis.onvoiceschanged !== undefined)
+    speechSynthesis.onvoiceschanged = populateVoiceList
+
+let txttoread = JSON.parse(localStorage.getItem('txts'))
+if (!txttoread) txttoread = {}
+atualizafavoritos()
+
+var tocando = { autor: false, titulo: false, rate: 1 }
+
+const rate = document.querySelector("#rate");
+rate.addEventListener("change", e => { 
+    tocando.rate = e.target.value
+    if(window.speechSynthesis.speaking) {
+        window.speechSynthesis.cancel()
+        if( tocando.titulo ) speak()
+    }
+})
 
 function populateVoiceList() {
     if (typeof speechSynthesis === "undefined") return;
@@ -12,10 +30,6 @@ function populateVoiceList() {
         document.getElementById("voiceSelect").appendChild(option);
     }
 }
-populateVoiceList();
-
-if (typeof speechSynthesis !== "undefined" && speechSynthesis.onvoiceschanged !== undefined)
-    speechSynthesis.onvoiceschanged = populateVoiceList;
 
 fetch('./store.json').then(response => {
     response.json().then(store => {
@@ -33,32 +47,32 @@ fetch('./store.json').then(response => {
             e.innerHTML = html
             menu.appendChild(e)
         })
-        let search = document.getElementById("search")
-        let autores = menu.querySelectorAll('.autor')
-        search.addEventListener("input", (e) => {
-            let inputed = e.target.value.toLowerCase()
-            autores.forEach(autor => {
-                let autorvisible = false
-                let ul = document.getElementById('#ul_' + autor.id)
-                let textos = autor.querySelectorAll('.texto')
-                textos.forEach(texto => {
-                    if (texto.textContent.toLowerCase().includes(inputed) || texto.dataset.autor.toLowerCase().includes(inputed)) {
-                        if (texto.className != 'texto visible') texto.className = 'texto visible'
-                        autorvisible = true
-                    }
-                    else if (texto.className != 'texto invisible') texto.className = 'texto invisible'
-                })
-                if (autorvisible) {
-                    if (autor.className != 'autor visible') autor.className = 'autor visible'
-                    if (ul.className != 'visible') ul.className = 'visible'
-                }
-                else {
-                    if (autor.className != 'autor invisible') autor.className = 'autor invisible'
-                    if (ul.className != 'invisible') ul.className = 'invisible'
-                }
-                if (inputed == '' && ul.className != 'invisible') ul.className = 'invisible'
-            })
+    })
+})
+
+document.getElementById("search").addEventListener("input", e => {
+    let inputed = e.target.value.toLowerCase()
+    let autores = menu.querySelectorAll('.autor')
+    autores.forEach(autor => {
+        let autorvisible = false
+        let ul = document.getElementById('#ul_' + autor.id)
+        let textos = autor.querySelectorAll('.texto')
+        textos.forEach(texto => {
+            if (texto.textContent.toLowerCase().includes(inputed) || texto.dataset.autor.toLowerCase().includes(inputed)) {
+                if (texto.className != 'texto visible') texto.className = 'texto visible'
+                autorvisible = true
+            }
+            else if (texto.className != 'texto invisible') texto.className = 'texto invisible'
         })
+        if (autorvisible) {
+            if (autor.className != 'autor visible') autor.className = 'autor visible'
+            if (ul.className != 'visible') ul.className = 'visible'
+        }
+        else {
+            if (autor.className != 'autor invisible') autor.className = 'autor invisible'
+            if (ul.className != 'invisible') ul.className = 'invisible'
+        }
+        if (inputed == '' && ul.className != 'invisible') ul.className = 'invisible'
     })
 })
 
@@ -67,22 +81,18 @@ function showtxts(autor) {
     e.className = e.className == 'invisible' ? 'visible' : 'invisible'
 }
 
-let txttoread = JSON.parse(localStorage.getItem('txts'))
-if (!txttoread) txttoread = {}
-atualizafavoritos()
-
 async function createtxt(txt, html) {
     let e = document.createElement('div')
     e.innerHTML = html
-    for(let p of e.children) {
-        if(p.className != "toplink" &&
-        p.className != "info" &&
-        p.className != "link" &&
-        p.className != "tabela_datas" &&
-        p.innerText.length > 0 &&
-        p.tagName != 'TITLE' &&
-        p.tagName != 'TABLE' &&
-        p.tagName != 'STYLE') {
+    for (let p of e.children) {
+        if (p.className != "toplink" &&
+            p.className != "info" &&
+            p.className != "link" &&
+            p.className != "tabela_datas" &&
+            p.innerText.length > 0 &&
+            p.tagName != 'TITLE' &&
+            p.tagName != 'TABLE' &&
+            p.tagName != 'STYLE') {
             txt.push(p.innerText.replaceAll('\n', ' ').replaceAll('\t', ''))
         }
     }
@@ -173,15 +183,13 @@ function play() {
     let { autor, titulo } = button.dataset
     if (titulo == 'none') erro.innerText = 'nenhum texto selecionado'
     else {
+        tocando = { autor, titulo, rate: tocando.rate }
         erro.innerHTML = `tocando <strong>${titulo}</strong> de ${autor}`
-        let buttonclear = document.getElementById('buttonclear')
-        buttonclear.dataset.autor = autor
-        buttonclear.dataset.titulo = titulo
-        speak(autor, titulo)
         let buttonpause = document.getElementById('buttonpause')
         buttonpause.className = 'ativo'
         buttonpause.innerText = 'pausar'
-        document.getElementById('buttonclear').className = 'button'
+        document.getElementById('buttonclear').className = 'ativo'
+        speak()
     }
 }
 
@@ -198,23 +206,22 @@ function pause() {
     }
 }
 
-function limpar(autor, titulo) {
-    let button = document.getElementById('buttonclear')
-    if (autor && titulo) {
+function limpar(origem) {
+    const { autor, titulo, rate } = tocando
+    if(!origem ||  document.getElementById('buttonclear').className != 'disabled') {
         txttoread[autor][titulo] = undefined
-    } else if (button.className != 'disabled') {
-        const { autor, titulo } = button.dataset
-        txttoread[autor][titulo].progresso = 0
         window.speechSynthesis.cancel()
         document.getElementById('progresso').innerText = ''
         document.getElementById('buttonclear').className = 'disabled'
         document.getElementById('buttonpause').className = 'disabled'
         document.getElementById('erroplay').innerText = ''
+        tocando = { autor: false, titulo: false, rate }
     }
     atualizafavoritos()
 }
 
-function speak(autor, titulo) {
+function speak() {
+    const {autor, titulo, rate} = tocando
     let progresso = txttoread[autor][titulo].progresso
     let total = txttoread[autor][titulo].texto.length
     document.getElementById('progresso').innerHTML = `<strong>${(progresso / total * 100).toFixed(2)}%</strong> :   ${progresso}/${total} parágrafos ouvidos`
@@ -222,22 +229,22 @@ function speak(autor, titulo) {
         document.getElementById('erroplay').innerText = `você concluiu o texto ${titulo} de ${autor}!`
         limpar()
     } else {
-        var to_speak = new SpeechSynthesisUtterance(txttoread[autor][titulo].texto[progresso]);
-        const selectedOption = document.getElementById("voiceSelect").selectedOptions[0].getAttribute("data-name");
+        var to_speak = new SpeechSynthesisUtterance(txttoread[autor][titulo].texto[progresso])
+        const selectedOption = document.getElementById("voiceSelect").selectedOptions[0].getAttribute("data-name")
         for (let i = 0; i < voices.length; i++) {
             if (voices[i].name === selectedOption) {
                 to_speak.voice = voices[i];
             }
         }
+        to_speak.rate = rate
         window.speechSynthesis.speak(to_speak)
-        to_speak.addEventListener("end", (event) => {
+        to_speak.addEventListener("end", event => {
             txttoread[autor][titulo].progresso++
             atualizafavoritos()
-            speak(autor, titulo)
+            speak()
         })
     }
 }
-
 
 function showfavoritos() {
     let e = document.getElementById('favoritos')
