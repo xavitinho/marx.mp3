@@ -1,3 +1,5 @@
+if(window.location.href.startsWith('http://127.0.0.1:5500')) window.location.replace("https://marxistmp3.web.app")
+
 var voices;
 populateVoiceList()
 if (typeof speechSynthesis !== "undefined" && speechSynthesis.onvoiceschanged !== undefined)
