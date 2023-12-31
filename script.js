@@ -1,15 +1,19 @@
-if(window.location.href.startsWith('https://marxistmp3.web.app')) window.location.replace("https://xavitinho.com/marx.mp3")
+if (window.location.href.startsWith('https://marxistmp3.web.app')) window.location.replace("https://xavitinho.com/marx.mp3")
 
-var voices;
+let voices;
 populateVoiceList()
-if (typeof speechSynthesis !== "undefined" && speechSynthesis.onvoiceschanged !== undefined)
+if (typeof speechSynthesis !== "undefined" && speechSynthesis.onvoiceschanged !== undefined) {
     speechSynthesis.onvoiceschanged = populateVoiceList
+}
 
 let txttoread = JSON.parse(localStorage.getItem('txts'))
-if (!txttoread) txttoread = {}
+if (!txttoread) {
+    txttoread = {}
+}
+
 atualizafavoritos()
 
-var tocando = { autor: false, titulo: false, rate: 1 }
+let tocando = { autor: false, titulo: false, rate: 1 }
 
 const rate = document.querySelector("#rate");
 rate.addEventListener("change", e => {
@@ -223,7 +227,7 @@ function speak() {
         document.getElementById('erroplay').innerText = `você concluiu o texto ${titulo} de ${autor}!`
         limpar()
     } else {
-        var to_speak = new SpeechSynthesisUtterance(txttoread[autor][titulo].texto[progresso])
+        let to_speak = new SpeechSynthesisUtterance(txttoread[autor][titulo].texto[progresso])
         const selectedOption = document.getElementById("voiceSelect").selectedOptions[0].getAttribute("data-name")
         for (let i = 0; i < voices.length; i++) {
             if (voices[i].name === selectedOption) {
@@ -232,7 +236,7 @@ function speak() {
         }
         to_speak.rate = rate
         window.speechSynthesis.speak(to_speak)
-        to_speak.addEventListener("end", event => {
+        to_speak.addEventListener("end", () => {
             txttoread[autor][titulo].progresso++
             atualizafavoritos()
             speak()
@@ -280,8 +284,8 @@ function liberarmemoria(autor, titulo) {
     atualizafavoritos()
 }
 
-function limpar(origem) {
-    var { autor, titulo, rate } = tocando
+function limpar() {
+    let { autor, titulo, rate } = tocando
     if (autor && titulo) {
         txttoread[autor][titulo].progresso = 0
         window.speechSynthesis.cancel()
