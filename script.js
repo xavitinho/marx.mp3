@@ -1,4 +1,4 @@
-if(window.location.href.startsWith('https://xavitinho.github.io/marx.mp3')) window.location.replace("https://marxistmp3.web.app")
+if(window.location.href.startsWith('https://marxistmp3.web.app')) window.location.replace("https://xavitinho.com/marx.mp3")
 
 var voices;
 populateVoiceList()
@@ -195,9 +195,8 @@ function play() {
         tocando = { autor, titulo, rate: tocando.rate }
         erro.innerHTML = `tocando <strong>${titulo}</strong> de ${autor}`
         let buttonpause = document.getElementById('buttonpause')
-        buttonpause.className = 'ativo'
         buttonpause.innerText = 'pausar'
-        document.getElementById('buttonclear').className = 'ativo'
+        for (let e of document.getElementsByTagName('button')) e.className = 'ativo'
         speak()
     }
 }
@@ -220,7 +219,7 @@ function speak() {
     let progresso = txttoread[autor][titulo].progresso
     let total = txttoread[autor][titulo].texto.length
     document.getElementById('progresso').innerHTML = `<strong>${(progresso / total * 100).toFixed(2)}%</strong> :   ${progresso}/${total} parágrafos ouvidos`
-    if (progresso == total) {
+    if (progresso == total || progresso > total) {
         document.getElementById('erroplay').innerText = `você concluiu o texto ${titulo} de ${autor}!`
         limpar()
     } else {
@@ -286,11 +285,20 @@ function limpar(origem) {
     if (autor && titulo) {
         txttoread[autor][titulo].progresso = 0
         window.speechSynthesis.cancel()
+        for (let e of document.getElementsByTagName('button')) if (e.id != 'buttonplay') e.className = 'disabled'
         document.getElementById('progresso').innerText = ''
-        document.getElementById('buttonclear').className = 'disabled'
-        document.getElementById('buttonpause').className = 'disabled'
         document.getElementById('erroplay').innerText = ''
         tocando = { autor: false, titulo: false, rate }
         atualizafavoritos()
+    }
+}
+
+function move(dir) {
+    const { autor, titulo } = tocando
+    if (tocando.titulo) {
+        window.speechSynthesis.cancel()
+        txttoread[autor][titulo].progresso += dir
+        if (txttoread[autor][titulo].progresso < 0) txttoread[autor][titulo].progresso = 0
+        speak()
     }
 }
