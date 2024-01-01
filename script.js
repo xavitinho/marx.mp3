@@ -37,25 +37,6 @@ function populateVoiceList() {
     }
 }
 
-fetch('./store.json').then(response => {
-    response.json().then(store => {
-        let menu = document.getElementById('menu')
-        Object.keys(store).forEach(autor => {
-            let e = document.createElement('li')
-            e.id = autor
-            e.className = "autor visible"
-            let html = `<a onclick="showtxts(\`${autor}\`)">${autor}</a><ul class = "invisible" id="#ul_${autor}">`
-            store[autor].textos.forEach(({ titulo, url }) => {
-                let inferno = titulo.includes('"') ? "'" : '"'
-                html += `<li class="texto visible" data-autor="${autor}"><a onclick=${inferno}requestserver(\`${autor}\`, \`${titulo}\`, \`${url}\`)${inferno}>${titulo}</a></li>`
-            })
-            html += '</ul>'
-            e.innerHTML = html
-            menu.appendChild(e)
-        })
-    })
-})
-
 document.getElementById("search").addEventListener("input", e => {
     let inputed = e.target.value.toLowerCase()
     let autores = menu.querySelectorAll('.autor')
@@ -299,7 +280,7 @@ function limpar() {
 
 function move(dir) {
     const { autor, titulo } = tocando
-    if (tocando.titulo) {
+    if (autor && titulo) {
         window.speechSynthesis.cancel()
         txttoread[autor][titulo].progresso += dir
         if (txttoread[autor][titulo].progresso < 0) txttoread[autor][titulo].progresso = 0
