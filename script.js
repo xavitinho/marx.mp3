@@ -45,7 +45,7 @@ document.getElementById("search").addEventListener("input", e => {
         let ul = document.getElementById('#ul_' + autor.id)
         let textos = autor.querySelectorAll('.texto')
         textos.forEach(texto => {
-            if (texto.textContent.toLowerCase().includes(inputed) || texto.dataset.autor.toLowerCase().includes(inputed)) {
+            if (texto.textContent.toLowerCase().includes(inputed) || autor.id.toLowerCase().includes(inputed)) {
                 if (texto.className != 'texto visible') texto.className = 'texto visible'
                 autorvisible = true
             }
@@ -236,6 +236,7 @@ function atualizafavoritos() {
     localStorage.setItem('txts', JSON.stringify(txttoread))
     let menu = document.getElementById('menufavoritos')
     menu.innerHTML = ''
+    let cont = 0
     Object.keys(txttoread).forEach(autor => {
         let visible = false
         let e = document.createElement('div')
@@ -249,12 +250,17 @@ function atualizafavoritos() {
                         <a style="color: #f66; font-size: .8em; font-weight: bold;" 
                         onclick=${inferno}liberarmemoria(\`${autor}\`, \`${texto}\`)${inferno}>× remover da memória </a></li>`
                 visible = true
+                cont++
             }
         })
         html += '</ul>'
         e.innerHTML = html
         if (visible) menu.appendChild(e)
     })
+    if (cont<1) {
+        document.getElementsByTagName('seta')[0].innerText =  '▼'
+        document.getElementById('favoritos').style.display = 'none'
+    }
 }
 
 function liberarmemoria(autor, titulo) {
