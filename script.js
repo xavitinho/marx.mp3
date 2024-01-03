@@ -1,3 +1,5 @@
+let serverurl = 'https://servermarxmp3.000webhostapp.com/?url='
+
 if (window.location.href.startsWith('https://marxistmp3.web.app')) window.location.replace("https://xavitinho.com/marx.mp3")
 
 let voices
@@ -101,7 +103,7 @@ async function requestserver(autor, titulo, url) {
    if (!url) {
     erro.innerText = 'houve um erro. tente novamente.'
    } else {
-    let xurl = 'https://servermarxmp3.000webhostapp.com/?url=' + url
+    let xurl = serverurl + url
     txttoread[autor][titulo] = { progresso: 0, url, texto: [''] }
     if (!url.includes('.pdf')) {
       let response = await fetch(xurl).catch(e => {
@@ -131,7 +133,7 @@ async function requestserver(autor, titulo, url) {
           return (url.replace('index.htm', p.children[0].getAttribute("href")))
          })
          for (let capurl of capurls) {
-          let response1 = await fetch('https://servermarxmp3.xaax.repl.co/?url=' + capurl).catch(e => {
+          let response1 = await fetch(serverurl + capurl).catch(e => {
             console.log(e)
             erro.innerText = 'houve um erro, tente novamente'
             return
