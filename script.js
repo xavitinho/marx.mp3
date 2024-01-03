@@ -101,7 +101,7 @@ async function requestserver(autor, titulo, url) {
    if (!url) {
     erro.innerText = 'houve um erro. tente novamente.'
    } else {
-    let xurl = 'https://servermarxmp3.xaax.repl.co/?url=' + url
+    let xurl = 'https://servermarxmp3.000webhostapp.com/?url=' + url
     txttoread[autor][titulo] = { progresso: 0, url, texto: [''] }
     if (!url.includes('.pdf')) {
       let response = await fetch(xurl).catch(e => {
