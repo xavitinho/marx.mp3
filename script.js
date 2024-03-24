@@ -1,4 +1,4 @@
-let serverurl = 'https://servermarxmp3.000webhostapp.com/?url='
+let serverurl = 'https://servermarxmp3.onrender.com/?url='
 
 if (window.location.href.startsWith('https://marxistmp3.web.app')) window.location.replace("https://xavitinho.com/marx.mp3")
 
