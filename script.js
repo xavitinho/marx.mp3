@@ -104,6 +104,7 @@ async function requestserver(autor, titulo, url) {
     erro.innerText = 'houve um erro. tente novamente.'
    } else {
     let xurl = serverurl + url
+    console.log(xurl)
     txttoread[autor][titulo] = { progresso: 0, url, texto: [''] }
     if (!url.includes('.pdf')) {
       let response = await fetch(xurl).catch(e => {
@@ -133,6 +134,7 @@ async function requestserver(autor, titulo, url) {
           return (url.replace('index.htm', p.children[0].getAttribute("href")))
          })
          for (let capurl of capurls) {
+          console.log(serverurl + capurl)
           let response1 = await fetch(serverurl + capurl).catch(e => {
             console.log(e)
             erro.innerText = 'houve um erro, tente novamente'
