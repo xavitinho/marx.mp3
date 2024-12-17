@@ -212,6 +212,8 @@ function speak() {
    document.getElementById('erroplay').innerText = `você concluiu o texto ${titulo} de ${autor}!`
    limpar()
  } else {
+   const paragrafoatual = document.getElementById('leitor').children[progresso]
+   paragrafoatual.style = 'background: #000; box-shadow: 15px 0 0 0 #000, -5px 0 0 0 #000'
    let to_speak = new SpeechSynthesisUtterance(txttoread[autor][titulo].texto[progresso])
    const selectedOption = document.getElementById("voiceSelect").selectedOptions[0].getAttribute("data-name")
    for (let i = 0; i < voices.length; i++) {
@@ -222,6 +224,7 @@ function speak() {
    to_speak.rate = rate
    window.speechSynthesis.speak(to_speak)
    to_speak.addEventListener("end", () => {
+    paragrafoatual.style = 'background: #0000; box-shadow: 0px 0 0 0 #000, 0px 0 0 0 #000'
     txttoread[autor][titulo].progresso++
     atualizafavoritos()
     speak()
@@ -292,6 +295,8 @@ function move(dir) {
  const { autor, titulo } = tocando
  if (autor && titulo) {
    window.speechSynthesis.cancel()
+   const paragrafoatual = document.getElementById('leitor').children[txttoread[autor][titulo].progresso]
+   paragrafoatual.style = 'background: #0000 box-shadow: 0px 0 0 0 #0000, 0px 0 0 0 #0000'
    txttoread[autor][titulo].progresso += dir
    if (txttoread[autor][titulo].progresso < 0) txttoread[autor][titulo].progresso = 0
    speak()
